@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<script>
+(function(){var ic=["data:image/png;base64,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","data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAAAwFBMVEUFF2GasdlXcJcQUJ3O1uKRnbEiUZphke20xeVzia0cS5MELT0SJkUSJkYbS5QZLk8EGj0tR3EEbnNKW3YAAP8zculCfesHPLYAf/8RIj4RIz4A/wAA///+/v4bSI0TKEoXOW4hZugAAAAZQH0VMFwRIj4SXOYbYufN2OwEHEMhTI4NPIUJLGQeUqIsVZTn6/IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABJJ+w1AAAAMHRSTlML//8R///r////oApcn1/i+v8D/wH//wQCpmgBAf/+/v//AP///v////////////+fZpwgAAAYAElEQVR42u2dC3eiSBOGG0QEE3U0mrnsB6JmBE2i///ffYBJJhc1Xui6ddU5e3Z2ZpI11NNvvVXdgJnbCXNz8/ar2z+9378HP378nf7VOCl+/Bj8/t37c3tjzO4i3twYW4myknzzmvre7x/Tv9PX0MyeGG8XbPqj1/vzgoGxAkHj3/Plw5rb3kDz3hAJfwe9P7YgaPb71R/PmD+9v5r5pjH4+/v29ubtIlMEYFR9r5uXla9Zs0JB77ZO2A09AMxL9jX5liH4O7g1b5WWDACj6ju9ZH+qYS92QjCoa8GIDADVpzG9f59PwyoD/2pBEzJgmtB+czvQ7EMzsJMBgwxAXflV+pFqQe/2+kpgrv3iWvt18aMhYBrI4RVfuzN+GnhRVwKDAYCmnwwCGApgXmu/Bn5UXsCAAmBe+z4NIgjcXDoevAiA0fzmVi86PQSAAKiK/0CvOLm4vUgEzgfgRtWfqghc0hIaXf5ui4DR5S9MBIxNAIwufwYiYGwBUMm/XmEG7cCNHQBudPTDYzJ4Vhkw58i/Xlx5ZeAMVjT/nMqAaRYAo/LPrQyMmgSgLP/q/nmFOdEKmhO7f72i/IyAaQqAGy3/cgkwmn+5VvCU7BrNv9sEGM2/2wQYzb/bBBjNv9sEGM2/2wQYHf+7TYDR9S+fgJvLAND8u0CAOfInOv8VErdHCDiiAJp/Fwgwh+/7H+iFExOHDwmZgwZA9/8FxcCcCYAaQFeMoNEBgNsEGDWAzhhBczIARg2ASCN4KgBqAIUWAXMaAGoAXJoGGJ0AuD0NMFoAHJoG3JwAgBYAt3pBowXA7SJgtAN0qgiYbwDQPWDxncDoOAB6D6BjRcCoA3TNB46OADDWAuCaBBh1gG77QOOkA/yxN5zxgeYgAD3xaV+tpoPB8K4Mv/0u/Op3hoPBdLUSj8JHCTAuCECV1GmZ9jLnURAk2+RAbJMgiCoahoOKlpULEmCEC8CqSn2ZeS84mPa9KAReyUGFgUQK9iuAuBZwl/sy9cnFUWIgkYLeh7T/2wToSUr+anoXt4ukgSja8V39DUVKgBHoAOrke9ukwdh6NQRyXMDNHgB6Mpb+dOg3m/x/EPjDqQwhGJjxnhIgIvt37SCxGEH7TgQD/xoBI+Yc0OrHw117m1iPbfvugT0Dgy8AMBeAeu0DZP+NAe468CYBRsKtYFX2iwQ0iooB1p3g6AMAjA+CrVaDOEgQIogHK74y8LEE8O0Bq8WfoAVjGXjtBA3rHvDHwA8S1Aj8AU8EBp88AEvtH8L5vmOOcMiyErwcDDFcLeAKVfu/VAJ+CPTeAcCvApTpjxJCETFEwLz3AJp+9xDYjQIMvwpAMf0cEdiNAgy/CkAz/S8IsKsBhlkFWA3Jpr9GYLhiVgMMq6NAq0E7IR7twYpPDbipARhxqQCrKYW+//u5ABcrMHg1gUz2AVZ+kbCIwmdCwA4AJvsAxIs/SytQ7QcYHk1gqf4Jq2BRB3q79c/AAqzugoRZBHcrFjXAMGgC2S1/NiJg5iMzIg8Aw+XPRQRKE2CoWwCmy5+HCPRqAEhbgNUwSBhHQLsdGMyNIf5UoDhhHjFxE0B6CrAaRAn7iCjPhm9JA7C62yYCYkvYC96S3glqJ0KiTXoURNUDPkSJmIgeyO4HUQWAbfPPbCRgiN4StPITYUF0h7AEQMu/y0bgliYAAvNPlIBbQ7AJeAgSkREQtII9egAIs3/ErWCP3KPBVneJ4CBHwIAaAPLsP+1mgBoA0vNPjwBaYwD5+SdHAC0A2okD0VYAnM4/MQKM5t9tAozm320CjObfbQKoALByKv8lASsF4P30fxUnjkW8elAAnOr/ic4DDIn172D+KwIeFACH80+EAHwAHqZ3iaNxN31QAKbTwdZVALYDVQC5539OOiGiCjCdeonD4bkOwINrA6CvA6EHlwFwcABEbSCECoDDDQCZVgBXAdxtAMi0ArgABJr/shVwFQDnDSAJI2gQ8+9r7vFnwmgAPEyHmvnXGOIZQaMGwG0bYNQAuG0DDFYBUAPw0QZgFQE0BdACQGNbyCAJgBaAz0UASQKMFgC3i4BByb+OgPeOhB+cAcDTfH8NzxUAtABQKgIoCqAdAJ1OAB4AHQGRGgcZ+AKgh0AOBsLhEAQAtAAc2RMQD4A6QGI+0EDnX0cAtIYB4ACoA6Q1ETbA+ddTIN8E9NkQaAAiTfHxiCQDoA6Qng8EBkBbQGqtoFEBcFsCYD2ACsBJEiBUAVQAKEqAUQFwWwLMA1CoAJwnAVB5AQOgDBWAUyUAMClwAKgAnCUB4gDQc0BnSYC8EkBNALZFEXkvERXF1lUJgAOAjACUie90ZrPlh5jNOp0SBELjQGEAEBGAwutM8irheT77EPnudycdr3BLAsAAwL8VIIjq5H/K/CcOaggifLXyhAGAfg5gG3Vm3yT/HQSzToRtCoZTWQDgHgQqquzPzoiKAdxa0BYFwDTDXFDRfX7a2v+oA/k95umVbTaVBACiBfQm52f/lYEJonPxRQGA5qq82aXp3yEwQ0MgEAQAmgBE99ekf4cAWiGAkQAj2AIWnWvTv0MAyQ62xQCAZAFL9Z81Ekh1AMYGGqkVoJg0lP4agUkhtQaAAIBQRb08nzUYeY4gApEQADCmgJ3lrOFYdmROA+0DkE1j1vKPWAbiaSZCAaCHANEyn1mIfAldygIRCgBeATrLmaUALwMANcDYrwBtKfmHJ6BtvwYYaRXAZv7BCQgEKABwBbCbf3AC7NcAY70C+JLyD02Ab70G2AcgEpV/YAIi7gBk04Gw/AMTMLBNgBFUAWDyD0uAzx4AuCbQA8p/SQDcxkCbOQAPD2Dz0wgs/yUBYMam4N0FZHBN4HaWwwGQz8BOOAwtS4BtAGJpBgDaBtjeEDKZ1QC7IcgDzT+gDfCmdjNkF4CHDGgOXADnvyQAyNwE5UXkCwCYBZjk0ADkEzgTwBgAX6IBgLUBPmsAYCplkc8QIi8kmADLHgDmGt3jAHAPNAngCwCQBfCWM5QA6gTsmgAjwALMchwA8pkAE2AXgLZUBwjpA9uMAYDQyCCfoUUesHeBdgEoRAsAkAQUbAEA8YDbGWpsubtAw90DekvM/IM0Aj5bACC2Aic5JgAgA+GYLQAATUC0xC0BEEdD2mwBiGRbQCgbGHEFILPfBBT5DDkAdgQKrl3AULoFhLKBQ54AQDQBE3wFALCBNtsA3gBE6AIAYgO5AtB2oAKA1IC2AkDqIAD4sQCuAFjfKQkI5B9iRyhQAOhWAIgawBQA+88H7dAAwPosaMuzDbQ/BpjQKAH2G8GhAkDXAkCYAJYA2B8DREsaANifBFgcBHAGoEMFgI4CoAAoAPDHQSZUPIB1FxizBMD6IHBGBQDr9we0FQCSZwHAzgQoAHsBWFIBYKkAYADg0QHAUwAQtgIcAiBQABQABYDqGABgEKAAKAD8AHhSAJoD4EkBUAAUAAVAAVAAFAAFQAFQABQABUABcGkSyBIATwFo7EflCID13cCIDgC2T4XqdrCeB1AAvhbGGZkIFACMM4HuHApt66ngvX0gFQCsHwtneSr4Se8LaCz8JwWAcB9o//5wBYB0G2D/BWIsAbB/d/CWxp0hAK8R1dvDKZsAgIeF8gTA/oNCXXlEjM1HhVoEwPpuEJFhsP3HA1jcC7IKgP0nKFIwAQCvjoqYAtB2wgQAWIA2UwDsvy/CkSeFxkwBsP+sYAqPiQJ4c5jPE4BskzhQAyDeGLHh2QVAvC8Avw+AeGcM0/cFQLwxBH1LGOJ1AWzfGPLkya8BEBXA4olAywAAvDUM+0FBAK8MstoF2gUA4sWRuBIA8u5YXwEgawMhLCBfALIhxJt1Md8aAvC2kCTZDrmawCwLhEsAiAAEGVsAINoATAkAEQC7TYBlACDeHo14MmxZQPx8MV8AMggXiNcIgLQApQfkWwJgXCDallAOYXEse0DLAIC4QCwJABIAux7QMgAwLhBnRwBiF8C+B7QNAIwJQGkFQVpA22Mg6yVgCHOREIoAUAGwuxdsH4CsSGQWAagCYHcv2D4AUCYAfFcwhyLbsgWwDgCQCYA+H7qEAtu2BbBeAqBMAKwNADMA1i2AdQCAJgGwBADmP8iYAwBxKuh1ZAZ1nxDA7cAwp4FAFADMBFRPjcph8g+napY3AiAAWMCtFqB5ENQEqFa1BXsAwBpBKAIg82+9CYQAALAGQBAAmn/rTSAAAICN4I4Aqz4gh82/9SYQAoAM9pJFNp1gPgP+YTIBAMCcC3vfC1grA0tI/2//NBiUAsDWgJKAe0sELO+B8w9QASAAAK4B1maCgPM/uAoAAQBsH7DrnvLGjUCee+A/hv0eAEYBhlvwS1dMGhaB5aQA/yG2QxkKADsL+lcG8ia7vw7Cj+A9CQEg8xOMy9dcN7CcYSBsfx8ADICswLh+24ZEoFz+W4zPX2RiAADcE/7oou+vRyBf3kc4n779JEcBNglSRJPrEMiXkwjrs2/kKADEU2MPWoErECjT76F98OhJEAA4NvAVgfvlRXZwubz3ED+2n0kCAMcGvi2mTn6uDJRf0IkwP3ORiQIAywa+7Q9UMpCfnv1y8Qe4nxjGAsIpwHCbIEfUuc9PgKD6O/e4ix9sCggJwJOX4EfhdSZVgvND4/7yzyYdryDwUb0nYQDgdYJfIbivlnkV+Uu8/Nfsnkby4XpASABISMAbBZHndTqd2aSOWflLz4sKQh8QTADgAEDtBNmFn8kDIAs0ryc3LZlEAFQCCAoAJAAqAQQFABQAlQB6AgAKgEoAPQGABUAlgJwAwAKgEkBOAIABUAmgJgCwACxIjQOJhve0kKsAZHYECMcmE1wCFplKwHcCkC0EAwB/pyi7GGaSFaCkO9YcH4sYWADAFQD5dCD1KMDTAQ+AtoJkWkAUALQVpNMC4ihAttZEH4p15kAJWDypDzzkAOEFAEMBdEuAxCYAHgALnQcemgEunACg/DHbmu2v0cbIP04J0GEAiREAHgALHQbsGwEsnAFAJ8IEZsC4JWChncDnDmCRuQWAdgL4HQAiAGoDSBgARAD0bMiHPQC0/OMBoL0gegeIDIDaAHwDgKsA2gsid4DoJUCPBuwMwNMicxSAhdqAygAsXAWgVD49HJKsMQsAMgA6DcCcAFAAQI1gjJx/bABKI+j02YD2E3L+0QFweyLoYa9/EgC42woUmQJQtwKOElCs8fNPAAB3Z8IbAvnPzAI9XG0GqwYQ/+oTAKBiwHcy/xSCBgAOEkAk/1QAcG4gFBPJPxkAHCOATP7pAOAUAXTyTwgAhwgglH9KADhDAKX8kwLAkV7Ap5R/WgCkLhDgZ6kCcCjW8gnws/VCATimAaJvGgyIrX9yACxk7w1W+38LBeAbDViLPSHiramtf4IAlARIPSPkZfTyTxCAqgy0Zeaf4rUmCYDIG0a264UC4PI8ICao/2QVIM0icQ0gyQJAFwBxxwQ3NAWAKAAlAcJ8oEc0/1QBKEPURHC7VgCc9oEx1fzTVQBRPrAgm3/KAAjygT5hAFKyIWciXDpAskEYgMV6KwSAtQJwmQTEYhygAnAZAYEQB6gAXAjARogDVAAc9oEe6fwTByBd8y8CGwXAaR8Y084/dQBS7kdDAuL5pw+Arw7QaQCY+8CIev7pA5CyngduFACnfWCbfP4ZAMDYBwb0Ly4LAHx1gE4DwNYHBpkqQDOxUQfoNgA8faDHIf88AEhThj5wu04VAJd9YJwpAC77wIBH/rkA8LhRB+g0AOwkwGOSfzYApGmgDtBpAHj5wDhTABongNGtYgWb/DMCgJMP9BWA5mPNxwd6fPLPCABGPnCdKgAu+8A4UwAsEcBCAgpOl5QXAI+hOkCnAWAxD/QyVQCLrQD9I8KbVAGwKAGxOkCnAUgfifvAgNn15AdAqA7QaQCI+8AoUwVw2gduHhUAl32gl60VAPs2oFAH6DYAZLcE/EcFwGUfGDxyVICQ4Ycm6gNDBcBpH+hlqQIAFQR94HbN8kqaLsdPTdEHxo8KACAB5HxgwTP/IVMA6D0ywOcKQJ8nAI/EfKDHM/9plysAxHwgUwdYAdBi+slp+UCmDjBN+2bEVQEo+cCCa/5LAFoh18++UQd4fbTMvKsS4KoDLGPEGAA6t4pt2F7BsASAbRtAxgfGfAWgOzfzFl8FeCTxyICC7wVM+7wBoOED+TrAGoD/+LYB6ZqCD2TsAMsmYG5Yu0AKPnDD+OqFrf/MT8YukMKWAGsBKD2gabE2Aei3igWcL15pAX6a8XzE+mcI1QFeA0DLzEe8TQCuD4xY57/0gGMzZ+4CcY8Ib1hfum65+s28xdoFlq1gjOkA17wBqNb/mLcLxLxVjLcDrCpAqwSAuwlIU7QtgZi3AKSjcvWXABjeNQBvHhjwdoBlBWhV2edfA9INjg8MmV+2/m75lzVgFDKXgFgd4GVN4A4A7jUgRTkivGWe/roJ3AHAvwZg+EDuDnBXAep/2NcADB9YPHJfNHUF2AEgoAaAHw3xuV+xXQXYAcC/BoD7QPYOsNoIegOA/ywI2gduN+yv164CvADQ4l8DYI8Is3eA9T7APwDGnE8GIvjAIpUiAC8AsN8TBvaB7B3gqwV8BwD7UQCgD+TvAF+GAP8AEGEDwXwgfwcYmv+NPwIgwAaC+cBYkAC8/VuGBETqAM+zgO8AkCABMD7QZz8EfusB3wMw/h/7ThCmFRTgANPWHgBkSADArWL8HeDuKNAXAMYj/hIA4ANlCMCvPQDIkADbjwwIUlkC8B4A/scC6g5XHeC3AjA2+wGQIAGWfWD0KEEA3if9/a9lzAKs3iomQCLT1mh8CIBf/HcE7G4JCHCAYf+9A/gEQPlHAiTAXiso4BhIGn4UgE8AlK2gAACs+cBYRAv4QQA+AVD5QJ0HCm4Bw+6n/H8GYN4aSfCBgTrAgw7QHAdgpD5Q8gyw/1kAvgAgZEvAwtGQgH/6P40A9gMgoxPw1QGeVAD2ASCjCDTuAyUcA/laAPYBIKITaP6RAfwPAu8rAHsBqM6I879LIFYH+M0I6DAAEg4HNewDJcwA358COA7AvCXABjTrA/k7wLC/P9d7f3P+c95/Vh8oyQGG3TKppwMgwQY0eUTYT9kLwF4DcBgAAQcE148ddYDvDEBrfg4AIo4GNOYD+TvA/oECcBgAAUZw3ZQP7HAXgOfD+T8MgIAHBzXkA9k7wLB7NM0HQ0ArsFEHWK7/7rw1vgSAkoDus0oAdwcYhnu2gE4DYPyLOwFNnA9k3g2V+T+a5GN/Nh+3mBPQgA9kLgBV/n/NLwVAAgFX3ioW8F//R/P/DQD8Cbj2iDBvB/h9/r8DgD0Bm+t8YCQ9/98CIEADAlcd4Cn5/x6AmgDG1+EqH+g9bhj3/6fk/wQA5uMR85ngxRLA+hhI2D0l/6cAwP6U4MU+MGbsAJ67pyX3JACqqXDKFoGL54EB4/yH9WuBGwOgepRsyNcKXnhEmK/qhWn/FPk/A4BSA1psm4F1Grs1A6zs3895swBUB0rY3jG0vsQHBmwd4HP39PyfDkC1NdRPuYpAeIkD5ElAJf+Hzn9dBQDnMrBJPVeOgVTyf2T7/yoAKq64dgNn+0CmmwBnyf/ZAMzNiGk3sDnXB3osC8DzefJ/PgDV3zddniJQyJ8BVsv/HPm/BICKL44icOaWAEcHWC//s/N59hfUIsCwHTjLBzJ0gGF6wfK/DIDqfVNlO8CuDpzhA/k5wOfw7Op/OQD1V/VDZgic4QPZOcBS/UtdHs/BAJiPfs1/9tlZgULmJsBzpf4XLf/LAaj/fyNeVuBkH9hhJQBXpf8KAHb9QDdlVAhO9IEFv9V/mfpfC8AOgbIQ8JGB8DQHyEUAwpfVP74ih1cBMK9ePTHqh1zMwCbtCHKAz89hnf7RVSm8DoAdAvM+n0pQCHGA1eLvt+rh/BwVgPlOgVqVDIQMJMAXIQDPO+2/TvwbA6D8HJUSVYaQPAPf+sCAR/arxT9uNZG7RgB4qQStPgMGQtYOMHzN/vXa3ywALzJQMRCShuAbCYgo57+6rrvsjxrQ/sYBqDSpZqASgpJUsp1BcNQBhlRXfr306+ybJpPW5PeqGTDzFwgqJSCoBUd9IEEHWKX+OQ27/Xrpz1um4Yw1/O3qfQKzcyetfr/b3f0ElAYFm8OPDCB1EPh5l/pd7lsvF3bceLYsAFALwc/WqzOoMAgJCUF42AeSOgYSht231JfX8aeF5Ffxfw/tfdWQfe0HAAAAAElFTkSuQmCC"];
+var m={name:"Rota Fácil — Planejador de entregas",short_name:"Rota Fácil",start_url:location.origin+location.pathname,scope:location.origin+"/",display:"standalone",orientation:"portrait",background_color:"#12233f",theme_color:"#12233f",lang:"pt-BR",icons:[{src:ic[0],sizes:"192x192",type:"image/png",purpose:"any"},{src:ic[1],sizes:"512x512",type:"image/png",purpose:"any"}]};
+var l=document.createElement("link");l.rel="manifest";l.href=URL.createObjectURL(new Blob([JSON.stringify(m)],{type:"application/manifest+json"}));document.head.appendChild(l);
+var t=document.createElement("link");t.rel="apple-touch-icon";t.href=ic[0];document.head.appendChild(t)})();
+</script><meta name="theme-color" content="#12233f"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Rota Fácil">
+<title>Rota Fácil — Planejador de entregas</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+:root{--navy:#12233f;--blue:#2166e8;--bg:#f3f6fb;--muted:#64748b;--line:#e3eaf4;--green:#16845b;--amber:#d98a00}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#17243a}
+header{background:linear-gradient(115deg,#10213d,#1e4f9b);color:#fff;padding:16px 20px}header h1{font-size:20px;margin:0 0 3px}header p{margin:0;color:#dce8ff;font-size:13px}
+main{max-width:1400px;margin:auto;padding:14px;display:grid;grid-template-columns:380px 1fr;gap:14px;align-items:start}
+.left{display:flex;flex-direction:column;gap:14px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:0 3px 14px #1c35540a}
+h2{font-size:15px;margin:0 0 10px}.muted{color:var(--muted);font-size:12px;line-height:1.5}
+label{display:block;font-size:11px;font-weight:700;color:#475569;margin:9px 0 4px}
+input,select,textarea,button{font:inherit}input,select,textarea{width:100%;padding:9px;border:1px solid #d6dfec;border-radius:9px;background:#fff;color:#17243a}
+button,a.btn,label.btn{display:block;text-align:center;text-decoration:none;border:0;border-radius:10px;padding:10px 12px;background:var(--blue);color:#fff;font-weight:700;cursor:pointer;width:100%;font-size:14px}
+button.sec,a.btn.sec,label.btn.sec{background:#eaf1ff;color:#1d4ed8}button.ok{background:var(--green)}button.warn{background:var(--amber)}button:disabled{opacity:.5}
+.row{display:flex;gap:7px;margin-top:8px}.row>*{flex:1}.g2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:10px 0}.stat{background:#f5f8fd;border:1px solid var(--line);border-radius:10px;padding:8px}.stat b{display:block;font-size:15px}.stat span{font-size:9.5px;color:var(--muted)}
+.bar{height:7px;background:var(--line);border-radius:6px;overflow:hidden}.bar i{display:block;height:100%;background:var(--green);width:0}
+#map{height:74vh;min-height:420px;border-radius:13px;border:1px solid var(--line)}
+.next{border:2px solid var(--blue)}.lbl{font-size:11px;font-weight:800;color:var(--blue);text-transform:uppercase}.big{font-size:17px;font-weight:800;margin:4px 0}
+#stops{max-height:46vh;overflow:auto;margin-top:10px}
+.stop{padding:9px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:28px 1fr 22px;gap:8px;font-size:12px}
+.num{height:26px;width:26px;border-radius:8px;background:#eaf1ff;color:#1d4ed8;display:grid;place-items:center;font-size:12px;font-weight:800}
+.stop.done{opacity:.45}.stop.done .num{background:var(--green);color:#fff}.stop.cur .num{background:var(--blue);color:#fff}.stop.fail .num{background:var(--amber);color:#fff}
+.stop small{display:block;color:#526177;line-height:1.4}.stop a,.stop summary{color:#1d4ed8;text-decoration:none;font-size:12px;cursor:pointer}
+.tag{display:inline-block;background:#eef4ff;color:#1d4ed8;padding:2px 6px;border-radius:6px;font-size:10px;font-weight:700;margin-right:4px}
+.pin{width:26px;height:26px;border-radius:50%;color:#fff;font:800 11px/26px system-ui;text-align:center;border:2px solid #fff;box-shadow:0 1px 5px #0006}
+.status{font-size:12px;color:var(--muted);margin-top:8px;min-height:16px;white-space:pre-line}
+@media(max-width:850px){main{grid-template-columns:1fr;padding:10px}.left{display:contents}#nextp{order:1}#mapp{order:2}#ctl{order:3}#lst{order:4}#map{height:50vh;min-height:320px}}
+.drive #ctl,.drive #lst,.drive header{display:none}.drive #nextp button,.drive #nextp a.btn{padding:18px 10px;font-size:17px}.drive #nextp .big{font-size:22px}.drive main{padding-bottom:80px}
+#drv2{width:auto;display:none;position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:999;background:#12233f}.drive #drv2{display:block}
+.stop.hl{background:#fff1e0;border-left:4px solid #f97316;padding-left:8px;border-radius:8px}.next.hl{background:#fff1e0;border-color:#f97316}.hlb{display:inline-block;background:#ffedd5;color:#c2410c;border-radius:6px;padding:2px 6px;font-size:11px;font-weight:700;margin:2px 4px 2px 0}
+#toast{position:fixed;left:12px;right:12px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:1000;background:#12233f;color:#fff;padding:10px 12px;border-radius:12px;display:flex;align-items:center;justify-content:space-between;font-size:14px;box-shadow:0 4px 18px #0006}#toast[hidden],#tact[hidden]{display:none}.drive #toast{bottom:78px}
+.ov{position:fixed;inset:0;background:#0009;z-index:2000;display:flex;align-items:center;justify-content:center;padding:16px}.ov[hidden]{display:none}.ov .box{background:#fff;color:#17243a;border-radius:16px;padding:16px;max-width:420px;width:100%;max-height:90vh;overflow:auto}
+@keyframes pl{0%,100%{box-shadow:0 0 0 0 #16845b88}50%{box-shadow:0 0 0 10px #16845b00}}.pulse button.ok{animation:pl 1s infinite}
+body.dark{background:#0d1420;color:#e6edf7}.dark .panel,.dark .ov .box{background:#161f2e;border-color:#263248;color:#e6edf7}.dark input,.dark select,.dark textarea{background:#0f1826;color:#e6edf7;border-color:#2c3a52}
+.dark .muted,.dark small,.dark .stat span{color:#9fb0c8}.dark button.sec,.dark a.btn.sec,.dark label.btn.sec{background:#1f2b40;color:#8fb4ff}.dark .stat{background:#0f1826;border-color:#263248}.dark .num,.dark .tag{background:#1f2b40;color:#8fb4ff}
+.dark .stop{border-color:#263248}.dark .stop.hl,.dark .next.hl{background:#3a2412}.dark .hlb{background:#4a2c14;color:#fdba74}.dark label{color:#e6edf7!important}.dark .stop a,.dark .stop summary{color:#8fb4ff}.dark .bar{background:#263248}
+.dark .leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.85) contrast(.9)}
+.stop>div{min-width:0;overflow-wrap:anywhere}.stop>input[type=checkbox]{justify-self:end;align-self:start}
+</style></head><body>
+<header><h1>Rota Fácil</h1><p id="sub">Roteirização de entregas</p><p style="margin:2px 0 0;font-size:11px;opacity:.8">Versão 4 · próxima = a mais perto de você</p></header>
+<main>
+<div class="left">
+<section class="panel next" id="nextp"></section>
+<section class="panel" id="ctl">
+<h2>Planejar rota</h2>
+<div class="row" style="margin-top:0"><button id="gps">📍 Usar minha localização</button><button class="sec" id="fol">🛰️ Seguir GPS: desligado</button></div>
+<div class="row"><button class="sec" id="drv">🚗 Modo dirigindo: desligado</button></div>
+<div class="stats"><div class="stat"><b id="km">—</b><span>km restantes</span></div><div class="stat"><b id="cost">—</b><span>combustível</span></div><div class="stat"><b id="time">—</b><span>tempo total</span></div><div class="stat"><b id="eta">—</b><span>termina ~</span></div></div>
+<div class="bar"><i id="prog"></i></div><div class="muted" id="psum"></div>
+<div class="row"><label class="btn sec" style="margin:0;font-size:14px">📂 Importar planilha<input id="file" type="file" accept=".xlsx,.xls,.csv,.json,application/json,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" hidden></label><a class="btn sec" id="full" target="_blank">🧭 Próximas 10 no Maps</a></div>
+<div id="status" class="status">Pronto. O mapa e as ruas reais precisam de internet.</div>
+<details id="more" style="margin-top:12px"><summary style="cursor:pointer;font-weight:700;font-size:14px">⋯ Mais opções</summary>
+<div class="row"><button class="sec" id="upd">🔄 Atualizar o app (buscar a versão mais nova)</button></div>
+<label style="display:flex;gap:8px;align-items:center;font-weight:600"><input type="checkbox" id="real" checked style="width:auto"> Usar distâncias reais das ruas (OSRM)</label>
+<label>Agrupar as paradas por<select id="gm"><option value="perto">Perto de mim primeiro (por região)</option><option value="rua">Rua (evita voltar na mesma rua)</option><option value="quadra">Quadra</option><option value="nenhum">Só pela distância</option></select></label>
+<div class="g2"><div><label>Raio da região (m)</label><input id="rad" type="number" min="50" max="1500" step="50" value="250"></div><div class="muted" style="padding-top:22px">entrega tudo dentro deste raio antes de sair dele</div></div>
+<label style="display:flex;gap:8px;align-items:center;font-weight:600"><input type="checkbox" id="zon" style="width:auto"> Agrupar por zonas (termina uma zona antes da próxima)</label>
+<details style="margin:8px 0"><summary style="cursor:pointer;font-weight:700;font-size:13px">⚙️ Custos e tempo (consumo, gasolina, valor por pacote)</summary>
+<div class="g2"><div><label>Consumo (km/L)</label><input id="cons" type="number" min="1" step=".1" value="10"></div><div><label>Gasolina (R$/L)</label><input id="fuel" type="number" min="0" step=".01" value="6.20"></div></div>
+<div class="g2"><div><label>Min por parada</label><input id="svc" type="number" min="0" value="2"></div><div><label>Km/h (sem OSRM)</label><input id="kmh" type="number" min="5" value="20"></div></div>
+<div class="g2"><div><label>Valor por pacote (R$)</label><input id="ppk" type="number" min="0" step=".01" value="0"></div><div><label>Seu ritmo</label><div id="pace" class="muted" style="padding:10px 0">ainda sem dados</div></div></div>
+</details>
+<div class="row"><button class="sec" id="dk">🌙 Modo noturno</button></div>
+<div id="refine" class="muted" style="margin:8px 0"></div>
+<div id="ruas" class="muted" style="margin:6px 0"></div>
+<div class="row"><button class="sec" id="endb">🏁 Definir ponto final (aqui)</button><button class="sec" id="reopt">🔄 Otimizar de novo</button></div>
+<div id="zs" style="margin-top:6px"></div><div id="ptsinfo" class="muted" style="margin-top:6px"></div>
+<div class="row"><button class="sec" id="cp">📋 Resumo</button><button class="sec" id="exp">⬇️ CSV</button></div>
+<div class="row"><button class="sec" id="hb">📊 Histórico</button><button class="sec" id="bk">💾 Backup</button></div><div id="histbox" hidden style="margin-top:8px"></div>
+<div class="row"><button class="sec" id="fb">💬 Enviar feedback</button></div>
+<div class="row"><button class="sec" id="clr">🗑️ Limpar dados</button></div>
+<div class="row"><button class="sec" id="rst">Recomeçar</button></div>
+</details>
+</section>
+<section class="panel" id="lst"><h2>Paradas <span id="count" class="muted"></span></h2>
+<input id="q" placeholder="🔎 Buscar endereço, quadra ou nome"><div id="stops"></div></section>
+</div>
+<section class="panel" id="mapp"><div id="map"></div></section>
+</main>
+<div id="toast" hidden><span id="tmsg"></span><button id="tact" class="sec" style="width:auto;padding:6px 12px;margin-left:10px"></button></div>
+<div id="tour" class="ov" hidden><div class="box"><h2 style="margin-top:0">👋 Como usar o Rota Fácil</h2><ol style="padding-left:20px;line-height:1.7"><li><b>Importe</b> a planilha do dia (.xlsx da Shopee).</li><li>Toque em <b>📍 Usar minha localização</b>: o app mostra a próxima parada.</li><li>Navegue pelo <b>Google Maps, Waze ou HERE</b> e, ao entregar, toque em <b>✔ Entregue</b> (ou Ausente / Não achei).</li><li>Na rua, use o <b>🚗 Modo dirigindo</b>: botões grandes e tela ligada.</li></ol><p class="muted">Seus dados ficam só neste celular. Faça um 💾 Backup de vez em quando.</p><button id="tourok">Entendi, vamos lá</button></div></div>
+<div id="scan" class="ov" hidden><div class="box"><h2 style="margin-top:0">📷 Conferir pacote</h2><video id="sv" playsinline muted style="width:100%;border-radius:12px;background:#000;max-height:38vh"></video><div id="sres" class="muted" style="margin:8px 0;min-height:40px">Aponte para o código de barras da etiqueta.</div><input id="scode" placeholder="Ou digite o código (ou os últimos dígitos)" autocapitalize="characters"><div class="row"><button id="sgo">Conferir</button><button class="sec" id="sclose">Fechar</button></div></div></div>
+<button id="drv2">✖ Sair do modo dirigindo</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script>
+const S0=[];const EMB_TS=0;
+const $=id=>document.getElementById(id);
+/* ===== Banco de dados local (IndexedDB). Todo acesso passa por LS: trocar por Supabase depois mexe só aqui. ===== */
+let DBH=null;const cache={};
+const idb=()=>new Promise(r=>{try{const q=indexedDB.open('rotafacil',1);q.onupgradeneeded=()=>q.result.createObjectStore('kv',{keyPath:'k'});q.onsuccess=()=>r(q.result);q.onerror=()=>r(null)}catch(e){r(null)}});
+const put=(k,v)=>{if(!DBH)return;try{DBH.transaction('kv','readwrite').objectStore('kv').put({k,v})}catch(e){}};
+async function dbInit(){DBH=await idb();
+ if(DBH)await new Promise(r=>{const q=DBH.transaction('kv').objectStore('kv').getAll();q.onsuccess=()=>{q.result.forEach(x=>cache[x.k]=x.v);r()};q.onerror=r});
+ try{for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k.startsWith('rf-')&&!(k in cache)){cache[k]=localStorage.getItem(k);put(k,cache[k])}}}catch(e){}
+ try{navigator.storage&&navigator.storage.persist&&navigator.storage.persist()}catch(e){}}
+const LS={del(k){delete cache[k];try{DBH&&DBH.transaction('kv','readwrite').objectStore('kv').delete(k)}catch(e){}try{localStorage.removeItem(k)}catch(e){}},get:k=>k in cache?cache[k]:null,set(k,v){cache[k]=v;put(k,v);if(!DBH||String(v).length<3000){try{localStorage.setItem(k,v)}catch(e){}}}};
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=n=>Number(n).toLocaleString('pt-BR',{maximumFractionDigits:1});
+const WELCOME='<div class="big">👋 Bem-vindo ao Rota Fácil</div><div class="muted">Para começar, importe a planilha de entregas do dia (.xlsx da Shopee). Os dados ficam só neste celular.</div><div class="row"><label for="file" class="btn" style="margin:0;font-size:14px">📂 Importar planilha</label></div>';
+const norm=t=>String(t).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+const OBS=[['entregar em mãos',/\bem maos\b|\bpessoalmente\b|\bentregar? (na|no|em|a) (mao|maos|portaria|recepcao|pessoa)\b/],['ligar antes',/\blig(ar|ue)\b|\btelefone\b|\bwhats(app)?\b/],['portaria/interfone',/\bportaria\b|\binterfone\b|\bporteiro\b|\bcondominio\b/],['atenção na descrição',/\bnao (deixar|entregar|receber)\b|\bso (entregar|receber)\b|\bretirar\b|\bfragil\b|\burgente\b|\bhorario\b|\bate as\b|\bapos as\b|\bobs\b|\bobservacao\b/]];
+const COM=/\b(loja|lojas|mercado|mercadinho|supermercado|padaria|farmacia|drogaria|oficina|mecanica|borracharia|lava ?jato|restaurante|lanchonete|pizzaria|acougue|hortifruti|salao|barbearia|estudio|studio|clinica|consultorio|escritorio|empresa|comercio|deposito|distribuidora|atacado|atacadista|construcao|posto|academia|igreja|escola|colegio|creche|ltda|eireli|galpao|galeria|shopping|conveniencia|bar|centro automotivo|auto ?pecas|auto ?center)\b/;
+function autoFlags(addrs){const t=addrs.map(norm).join(' | '),r=[];for(const [n,re] of OBS)if(re.test(t))r.push(n);const m=COM.exec(t);if(m)r.push('comércio: '+m[0]);return r}
+const flagMemo=new Map();
+const flags=i=>{const o=hm[nk(S[i])];if(o===0)return [];const key=S[i].p[0][0]+'|'+S[i].p.length;let r=flagMemo.get(key);if(!r){r=autoFlags(S[i].p.map(x=>x[0]));flagMemo.set(key,r)}return o===1&&!r.length?['marcado por você']:r};
+function setHl(i){hm[nk(S[i])]=flags(i).length?0:1;LS.set('rf-hm',JSON.stringify(hm));render()}
+const akey=(z,a)=>String(z||'').replace(/\D/g,'')+'|'+norm(a).replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
+const savePts=()=>LS.set('rf-pts',JSON.stringify(pts));
+const getPos=()=>new Promise(r=>{if(!navigator.geolocation)return r(null);navigator.geolocation.getCurrentPosition(p=>r({la:p.coords.latitude,lo:p.coords.longitude,acc:p.coords.accuracy}),()=>r(null),{enableHighAccuracy:true,timeout:8000,maximumAge:0})});
+function savePt(s,pos,src,manual){const now=Date.now();
+ s.p.forEach(x=>{const k=akey(s.z,x[0]),o=pts[k];
+  if(src==='shopee'){if(!o)pts[k]={la:pos.la,lo:pos.lo,src:'shopee',n:1,t:now};else{o.n++;o.t=now}return}
+  if(o&&o.src==='manual'&&!manual){o.n++;o.t=now;return}
+  if(o&&o.src==='gps'&&!manual&&mh(o,pos)<60){o.la=(o.la*o.n+pos.la)/(o.n+1);o.lo=(o.lo*o.n+pos.lo)/(o.n+1);o.n++;o.t=now}
+  else pts[k]={la:pos.la,lo:pos.lo,src:manual?'manual':'gps',n:1,t:now}});
+ savePts();$('ptsinfo').textContent='📌 '+Object.values(pts).filter(o=>o.src!=='shopee').length+' endereços com posição gravada neste celular'}
+async function capturePoint(i,manual){ // grava a posição real da casa para usar nos próximos dias
+ const s=S[i],pos=await getPos();
+ if(!pos){if(manual)$('status').textContent='Não consegui pegar o GPS para gravar a posição.';else savePt(s,{la:s.la,lo:s.lo},'shopee');return}
+ const d=mh(pos,s);
+ if(!manual&&(pos.acc>40||d>150))return; // sinal fraco ou já longe da casa: não grava para não errar
+ if(manual&&d>150&&!confirm('Você está a '+Math.round(d)+' m do ponto da Shopee. Gravar esta posição mesmo assim?'))return;
+ savePt(s,pos,'gps',manual);if(manual)$('status').textContent='📌 Posição gravada. Nas próximas planilhas com este endereço, o app usa este ponto.'}
+const pkd=i=>st[i]==='ok'?S[i].p.length:S[i].p.filter(x=>pd[x[1]]).length;
+const savePd=()=>LS.set('rf-pd-'+dsid,JSON.stringify(pd));
+const zoneOf=i=>zn[nk(S[i])]||S[i].b;
+const zoneNames=()=>[...new Set(S.map((_,i)=>zoneOf(i)))].sort();
+function setZone(i,v){if(v==='__new'){v=(prompt('Nome da nova zona:')||'').trim();if(!v){render();return}}const k=nk(S[i]);if(v===S[i].b)delete zn[k];else zn[k]=v;LS.set('rf-zn',JSON.stringify(zn));plan(cur)}
+function zoned(rest,nodes,d,ks,base){ // termina uma zona antes de ir para a próxima
+ const zs=new Map();rest.forEach((s,n)=>{const z=zoneOf(s);if(!zs.has(z))zs.set(z,[]);zs.get(z).push(n+1)});
+ const names=[...zs.keys()],cn=[base,...names.map(z=>{const a=zs.get(z).map(n=>nodes[n]);return{la:a.reduce((x,p)=>x+p.la,0)/a.length,lo:a.reduce((x,p)=>x+p.lo,0)/a.length}})];
+ const zo=opt(names.length,(a,b)=>mh(cn[a],cn[b]),[null,...names],null),out=[];let last=0;
+ for(const zi of zo){const ids=zs.get(names[zi-1]),mp=[last,...ids];
+  opt(ids.length,(a,b)=>d(mp[a],mp[b]),[null,...ids.map(n=>ks[n])],ks[last]||null).forEach(l=>out.push(mp[l]));last=out[out.length-1]}
+ return out}
+const LB={aus:'🚪 Ausente',nao:'❓ Não achei'};
+let gm='rua',endPt=null,pr={},dl={},tm=[],pts={},hm={},zn={},pd={},label='',S=[],st={},nm={},nt={},pin=[],order=[],cur=null,me=null,rt=null,dsid='',C=1,tok=0,markers=[],line=null,meMk=null,wid=null,lastP=null,lastT=0;
+if(typeof L==='undefined'){const z=new Proxy(function(){},{get:()=>z,apply:()=>z});window.L=z;$('status').textContent='O mapa não carregou (sem internet ou bloqueio). O restante do app funciona.'}
+const map=L.map('map').setView([-15.8,-47.9],4);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap'}).addTo(map);
+const nk=s=>s.la+','+s.lo,mh=(a,b)=>Math.abs(a.la-b.la)*111320+Math.abs(a.lo-b.lo)*111320*C;
+function load(d,id,lb){S=d;dsid=id;label=lb||id;C=Math.cos(S.reduce((a,x)=>a+x.la,0)/S.length*Math.PI/180);pin=[];order=[];Object.values(mk).forEach(o=>map.removeLayer(o.m));mk={};showAll=false;showDone=false;flagMemo.clear();
+ S.forEach((x,i)=>{let q=null;for(const p of x.p){const m=/\bq(?:d|uadra)?\.?\s*0*(\d+)/i.exec(p[0]);if(m){q=m[1];break}}x.kq=q?x.b.toLowerCase()+':'+q:'solo'+i;const sr=streetOf(x.p[0][0]);x.r=sr.label;x.kr=sr.key?x.b.toLowerCase().replace(/\s*-\s*\d.*$/,'')+'|'+sr.key:'solo'+i});applyGm();
+ try{st=JSON.parse(LS.get('rf-st-'+id)||'{}')}catch(e){st={}}
+ try{pd=JSON.parse(LS.get('rf-pd-'+id)||'{}')}catch(e){pd={}}
+ try{tm=JSON.parse(LS.get('rf-tm-'+id)||'[]')}catch(e){tm=[]}
+ try{pin=JSON.parse(LS.get('rf-pin-'+id)||'[]').filter(i=>S[i])}catch(e){pin=[]}
+ try{pr=JSON.parse(LS.get('rf-pr-'+id)||'{}')}catch(e){pr={}}
+ try{dl=JSON.parse(LS.get('rf-dl-'+id)||'{}')}catch(e){dl={}}
+ try{nm=JSON.parse(LS.get('rf-nm')||'{}');nt=JSON.parse(LS.get('rf-nt')||'{}')}catch(e){}
+ try{zn=JSON.parse(LS.get('rf-zn')||'{}')}catch(e){zn={}}
+ try{hm=JSON.parse(LS.get('rf-hm')||'{}')}catch(e){hm={}}
+ try{pts=JSON.parse(LS.get('rf-pts')||'{}')}catch(e){pts={}}
+ const pk=S.reduce((a,x)=>a+x.p.length,0);$('sub').textContent=S.length?`${pk} pacotes em ${S.length} paradas`:'Roteirização de entregas'}
+function opt(m,d,k,k0,endD,init){
+ const ids=[...Array(m).keys()].map(x=>x+1);if(m<3)return ids;
+ const len=o=>{let t=0,p=0;for(const i of o){t+=d(p,i);p=i}return t+(endD&&o.length?endD(p):0)};
+ const rev=o=>{let pv=k0,seen=new Set(pv?[pv]:[]),r=0;for(const i of o){const c=k[i];if(c!==pv){if(seen.has(c))r++;seen.add(c);pv=c}}return r};
+ const cost=o=>len(o)+PENV*rev(o);
+ const nn=nz=>{const rem=new Set(ids),o=[];let p=0;while(rem.size){let b=-1,bd=1e18;for(const j of rem){const v=d(p,j)+(nz?Math.random()*nz:0);if(v<bd){bd=v;b=j}}o.push(b);rem.delete(b);p=b}return o};
+ const t0=Date.now();let best=null,bc=1e18;
+ for(let r=0;r<5&&(r==0||Date.now()-t0<T1);r++){
+  let o=(r===0&&init&&init.length===m)?init.slice():nn(r?150:0),cc=cost(o),imp=true;
+  while(imp&&Date.now()-t0<T2){imp=false;
+   for(let i=0;i<o.length-1&&Date.now()-t0<T2+300;i++)for(let j=i+1;j<o.length;j++){const a=o.slice(0,i).concat(o.slice(i,j+1).reverse(),o.slice(j+1)),c=cost(a);if(c<cc-1e-6){o=a;cc=c;imp=true}}
+   for(let n=1;n<=6;n++)for(let i=0;i+n<=o.length&&Date.now()-t0<T2+300;i++){const sg=o.slice(i,i+n),rs=o.slice(0,i).concat(o.slice(i+n));
+    for(let q=0;q<=rs.length;q++){let ok=false;for(const x of [sg,sg.slice().reverse()]){const a=rs.slice(0,q).concat(x,rs.slice(q)),c=cost(a);if(c<cc-1e-6){o=a;cc=c;imp=true;ok=true;break}}if(ok)break}}}
+  if(cc<bc){bc=cc;best=o}}
+ return best}
+async function matrix(nodes){
+ if(!$('real').checked||nodes.length>100||nodes.length<3)return null;
+ try{const r=await fetch('https://router.project-osrm.org/table/v1/driving/'+nodes.map(p=>p.lo+','+p.la).join(';')+'?annotations=distance');
+  const j=await r.json();if(j.code!=='Ok'||!j.distances)throw 0;return j.distances}catch(e){return null}}
+async function plan(s){
+ if(!S.length){order=[];cur=null;render();return}
+ lastFull=Date.now();qHead=[];clearTimeout(rfT);const t=++tok,idx=S.map((_,i)=>i),prev=order.filter(i=>st[i]==='ok');
+ const oks=prev.concat(idx.filter(i=>st[i]==='ok'&&!prev.includes(i)));
+ const first=S.reduce((m,x,i)=>x.sp<S[m].sp?i:m,0);
+ cur=s||me||(oks.length?S[oks[oks.length-1]]:S[first]);
+ const pins0=[...new Set([...idx.filter(i=>!st[i]&&pkd(i)>0&&pkd(i)<S[i].p.length),...pin.filter(i=>!st[i])])];
+ const dls=idx.filter(i=>!st[i]&&!pins0.includes(i)&&dlMin(i)!=null).sort((a,b)=>dlMin(a)-dlMin(b));
+ const first1=idx.filter(i=>!st[i]&&!pins0.includes(i)&&!dls.includes(i)&&pr[nk(S[i])]===1);
+ const pBase=dls.length?S[dls[dls.length-1]]:(pins0.length?S[pins0[pins0.length-1]]:cur);
+ const pins=[...pins0,...dls,...optSub(pBase,first1)];
+ const last2=idx.filter(i=>!st[i]&&!pins.includes(i)&&pr[nk(S[i])]===2);
+ const rest=idx.filter(i=>!st[i]&&!pins.includes(i)&&!last2.includes(i)),fl=idx.filter(i=>st[i]&&st[i]!=='ok');
+ const base=pins.length?S[pins[pins.length-1]]:cur,nodes=[base,...rest.map(i=>S[i])];
+ $('status').textContent='Calculando a melhor ordem…';await new Promise(r=>setTimeout(r,40));
+ const dm=await matrix(nodes);if(t!==tok)return;
+ const d=(a,b)=>dm?dm[a][b]:mh(nodes[a],nodes[b]);
+ const ks=[null,...rest.map(i=>S[i].k)],endD_=endPt?(n=>mh(nodes[n],endPt)):null,plen=ns=>{let t=0,p=0;for(const n of ns){t+=d(p,n);p=n}return t};
+ let usedP=false,free,alt=null,ord,cmp='';
+ if(gm==='perto'&&rest.length){free=perto(rest.length,d,ks,nodes,base,endD_);usedP=true;const a1=T1,a2=T2;T1=150;T2=350;const alo=opt(rest.length,d,ks,base.k,endD_,groupInit(rest.length,d,ks));T1=a1;T2=a2;alt=plen(alo)}
+ else free=opt(rest.length,d,ks,base.k,endD_,gm==='nenhum'?null:groupInit(rest.length,d,ks));
+ ord=free;
+ if($('zon').checked&&rest.length){const zo=zoned(rest,nodes,d,ks,base),pl=ns=>{let t=0,p=0;for(const n of ns){t+=d(p,n);p=n}return t};ord=zo;usedP=false;cmp=` Com zonas: ${fmt(pl(zo)/1000)} km · sem zonas: ${fmt(pl(free)/1000)} km.`}
+ const o=ord.map(n=>rest[n-1]);if(usedP&&alt!=null)cmp+=` Perto primeiro: ${fmt(plen(free)/1000)} km · menor caminho possível: ${fmt(alt/1000)} km.`;
+ S.forEach(s=>{s.g=null});if(usedP)ord.forEach((n,j)=>{S[o[j]].g=ballOfNode[n]});
+ const fo=[];let p=o.length?S[o[o.length-1]]:base;const rm=new Set(fl);
+ while(rm.size){let b=-1,bd=1e18;for(const j of rm){const v=mh(p,S[j]);if(v<bd){bd=v;b=j}}fo.push(b);rm.delete(b);p=S[b]}
+ const tail2=optSub(o.length?S[o[o.length-1]]:base,last2);order=oks.concat(pins,o,tail2,fo);
+ $('status').textContent=(dm?'Ordem calculada com as distâncias reais das ruas.':'Ordem calculada em linha reta pelos quarteirões (sem internet ou OSRM indisponível).')+cmp;
+ render();drawRoute(t)}
+async function drawRoute(t){
+ const rest=order.filter(i=>st[i]!=='ok');rt=null;if(line){map.removeLayer(line);line=null}
+ if(!rest.length){stats();return}
+ const pts=[cur,...rest.map(i=>S[i]),...(endPt?[endPt]:[])];
+ line=L.polyline(pts.map(p=>[p.la,p.lo]),{color:'#2166e8',weight:3,opacity:.5,dashArray:'6 6'}).addTo(map);
+ if($('real').checked&&pts.length<=100){try{const r=await fetch('https://router.project-osrm.org/route/v1/driving/'+pts.map(p=>p.lo+','+p.la).join(';')+'?overview=full&geometries=geojson');
+  const j=await r.json();if(t!==tok)return;if(j.code==='Ok'&&j.routes.length){const x=j.routes[0];rt={km:x.distance/1000,sec:x.duration};map.removeLayer(line);line=L.geoJSON(x.geometry,{style:{color:'#2166e8',weight:5,opacity:.8}}).addTo(map);line.bringToBack()}}catch(e){}}
+ stats()}
+function stats(){
+ const rest=order.filter(i=>st[i]!=='ok'),pts=[cur,...rest.map(i=>S[i]),...(endPt?[endPt]:[])];let km=0;for(let i=0;i<pts.length-1;i++)km+=mh(pts[i],pts[i+1])/1000;
+ let sec=km/(Number($('kmh').value)||20)*3600;if(rt){km=rt.km;sec=rt.sec}
+ let mins=sec/60+rest.length*(Number($('svc').value)||0);const pc=paceAvg();if(pc.n>=3)mins=pc.avg*rest.length;$('pace').textContent=pc.n>=3?fmt(pc.avg)+' min por parada (últimas '+pc.n+')':'ainda sem dados';
+ $('km').textContent=rest.length?fmt(km):'0';$('cost').textContent='R$ '+fmt(km/(Number($('cons').value)||10)*(Number($('fuel').value)||0));
+ $('time').textContent=fmt(mins/60)+' h';$('eta').textContent=rest.length?new Date(Date.now()+mins*6e4).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'}):'—'}
+const noteBox=i=>`<input placeholder="Nome do destinatário" value="${esc(nm[nk(S[i])]||'')}" oninput="setF('nm',${i},this.value)" style="margin-top:6px"><textarea rows="2" placeholder="Observação (portão verde, cachorro, ligar antes…)" oninput="setF('nt',${i},this.value)" style="margin-top:6px">${esc(nt[nk(S[i])]||'')}</textarea>`;
+function setF(w,i,v){const o=w==='nm'?nm:nt,k=nk(S[i]);if(v.trim())o[k]=v;else delete o[k];LS.set('rf-'+w,JSON.stringify(o))}
+const G=s=>{const m=new Map();s.p.forEach(x=>{const k=x[0].toLowerCase().replace(/\s+/g,' ');const e=m.get(k)||[x[0],0];e[1]++;m.set(k,e)});return [...m.values()]};
+const sv_=i=>`https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${S[i].la},${S[i].lo}`;
+function render(){const E=etas();
+ const nd=S.filter((_,i)=>st[i]==='ok').length,nf=S.filter((_,i)=>st[i]&&st[i]!=='ok').length,pk=S.reduce((a,x)=>a+x.p.length,0);
+ $('prog').style.width=(S.length?nd/S.length*100:0)+'%';$('psum').textContent=`${nd}/${S.length} paradas feitas${nf?' · '+nf+' para tentar de novo':''} · ${S.reduce((n,_,i)=>n+pkd(i),0)}/${pk} pacotes entregues${(n=>n?` · 🟧 ${n} com destaque`:'')(S.filter((_,i)=>st[i]!=='ok'&&flags(i).length).length)}`;
+ $('zs').innerHTML=zoneNames().map(z=>{const ids=S.map((_,i)=>i).filter(i=>zoneOf(i)===z);return `<span class="tag">${esc(z)} ${ids.filter(i=>st[i]==='ok').length}/${ids.length}</span>`}).join(' ');
+ $('ptsinfo').textContent='📌 '+Object.values(pts).filter(o=>o.src!=='shopee').length+' endereços com posição gravada neste celular';
+ {const pl=order.filter(i=>st[i]!=='ok'),late=pl.filter(i=>dlMin(i)!=null&&E[i]&&mm(E[i])>dlMin(i)).length,np=pin.filter(i=>!st[i]).length,bits=[];
+ if(np)bits.push('✋ '+np+' paradas com ordem manual');if(Object.keys(pr).length)bits.push('⭐ '+Object.keys(pr).length+' com prioridade');if(Object.keys(dl).length)bits.push('⏰ '+Object.keys(dl).length+' com prazo');if(endPt)bits.push('🏁 ponto final definido');if(late)bits.push('⚠️ '+late+' vão passar do prazo');
+ $('refine').textContent=bits.length?bits.join(' · '):'';$('endb').textContent=endPt?'🏁 Remover ponto final':'🏁 Definir ponto final (aqui)'}
+ $('ruas').textContent=streetText();
+ const nx=order.find(i=>st[i]!=='ok'),el=$('nextp');el.className='panel next'+(nx!=null&&flags(nx).length?' hl':'')+(nx!=null&&arrivedFor===nx?' pulse':'');
+ if(!S.length){el.innerHTML=WELCOME}else if(nx==null){el.innerHTML='<div class="big">🎉 Todas as entregas concluídas!</div>'}
+ else{const s=S[nx],f=st[nx];el.innerHTML=`<div class="lbl">${f?'Tentar de novo':'Próxima'} · a ${Math.round(mh(cur,s))} m · parada ${order.indexOf(nx)+1} de ${S.length}</div>${flags(nx).length?`<div style="margin:4px 0">${flags(nx).map(x=>`<span class="hlb">🟧 ${esc(x)}</span>`).join('')}</div>`:''}${s.sv?'<div style="margin:4px 0"><span class="hlb" style="background:#e0f2fe;color:#075985">📌 posição salva de entregas anteriores</span></div>':''}${pin.includes(nx)?'<div style="margin:4px 0"><span class="hlb">✋ Ordem manual: o app não está escolhendo a mais próxima</span> <a href="#" onclick="document.getElementById(\'reopt\').click();return false" style="font-size:12px">Voltar ao automático</a></div>':''}<div class="big">${esc(s.p[0][0])}</div><div class="muted">🛣️ ${esc(s.r)} · ${(()=>{const n=order.filter(j=>st[j]!=='ok'&&S[j].kr===s.kr).length;return n>1?n+' paradas ainda nesta rua (contando esta)':'última parada desta rua'})()}</div>
+ <div class="muted">${esc(s.b)} · CEP ${esc(s.z)} · Shopee #${s.sp}${f?' · '+LB[f]:''}${E[nx]?' · 🕒 chega ~'+hhmm(E[nx]):''}${dl[nk(s)]?' · ⏰ prazo '+dl[nk(s)]:''}</div>${hist(nx)}<div style="margin:6px 0;font-size:16px"><b>📦 ${s.p.length} pacote${s.p.length>1?'s':''} aqui${pkd(nx)&&pkd(nx)<s.p.length?` · ${pkd(nx)}/${s.p.length} entregues`:''}</b></div>${G(s).length>1?G(s).map(([a,c])=>`<div class="muted">${c}× ${esc(a)}</div>`).join(''):''}${s.p.length>1?s.p.map((x,n)=>`<label style="display:flex;gap:8px;align-items:center;font-size:13px;font-weight:500;color:#17243a;margin:5px 0"><input type="checkbox" style="width:22px;height:22px" ${pd[x[1]]?'checked':''} onchange="togglePk(${nx},${n})"> #${x[2]} · ${esc(x[1])}</label>`).join(''):s.p.map(x=>`<div class="muted">#${x[2]} · ${esc(x[1])}</div>`).join('')}${noteBox(nx)}
+ <div class="row"><button onclick="go('gm',${s.la},${s.lo})">Google Maps</button><button onclick="go('wz',${s.la},${s.lo})">Waze</button></div>
+ <div class="row"><button class="sec" onclick="go('he',${s.la},${s.lo})">HERE WeGo</button><a class="btn sec" href="${sv_(nx)}">📷 Fachada</a></div>
+ <div class="row"><button class="ok" onclick="setSt(${nx},'ok')">✔ Entregue</button><button class="warn" onclick="setSt(${nx},'aus')">🚪 Ausente</button><button class="sec" onclick="setSt(${nx},'nao')">❓ Não achei</button></div>
+ <div class="row"><button class="sec" onclick="capturePoint(${nx},true)">📍 Esta parada está aqui (gravar posição)</button></div>
+ <div class="row"><button class="sec" onclick="openScan()">📷 Conferir pacote (código de barras)</button></div>`}
+ const n10=order.filter(i=>st[i]!=='ok').slice(0,10);
+ if(n10.length){const L_=S[n10[n10.length-1]],wp=n10.slice(0,-1).map(i=>S[i].la+','+S[i].lo).join('%7C');$('full').href=`https://www.google.com/maps/dir/?api=1&origin=${cur.la},${cur.lo}&destination=${L_.la},${L_.lo}${wp?'&waypoints='+wp:''}&travelmode=driving`}
+ if(endMk){map.removeLayer(endMk);endMk=null}
+ if(endPt)endMk=L.circleMarker([endPt.la,endPt.lo],{radius:9,color:'#111',weight:3,fillColor:'#fff',fillOpacity:1}).addTo(map).bindPopup('🏁 Ponto final');
+ order.forEach((i,k)=>{const s=S[i],c=st[i]==='ok'?'#16845b':st[i]?'#d98a00':i===nx?'#2166e8':flags(i).length?'#f97316':'#12233f',key=(k+1)+c;let o=mk[i];
+  const ic=()=>L.divIcon({className:'',html:'<div class="pin" style="background:'+c+'">'+(k+1)+'</div>',iconSize:[26,26],iconAnchor:[13,13]});
+  if(!o){mk[i]={m:L.marker([s.la,s.lo],{icon:ic()}).addTo(map).bindPopup(()=>popHtml(i)),key}}else if(o.key!==key){o.m.setIcon(ic());o.key=key}});
+ if(cur){if(meMk)map.removeLayer(meMk);meMk=L.circleMarker([cur.la,cur.lo],{radius:8,color:'#fff',weight:3,fillColor:'#e11d48',fillOpacity:1}).addTo(map)}
+ const qq=($('q').value||'').toLowerCase();$('count').textContent=`(${order.length})`;
+ const pendL=order.filter(i=>st[i]!=='ok'),doneL=order.filter(i=>st[i]==='ok'),vis=new Set(qq||showAll?order:[...(showDone?doneL:[]),...pendL.slice(0,LIMV)]),hid=(qq||showAll)?0:Math.max(0,pendL.length-LIMV);
+ lastR=null;lastG=null;passN={};$('stops').innerHTML=order.map((i,k)=>{const s=S[i],f=st[i]&&st[i]!=='ok',n=nt[nk(s)],p=nm[nk(s)];
+  if(qq&&!(s.p.map(x=>x.join(' ')).join(' ')+' '+s.b+' '+(n||'')+' '+(p||'')).toLowerCase().includes(qq))return '';
+  if(!vis.has(i))return '';
+  return hdrS(i)+`<div class="stop ${st[i]==='ok'?'done':''} ${f?'fail':''} ${i===nx?'cur':''} ${flags(i).length?'hl':''}"><div class="num">${k+1}</div><div>
+  ${G(s).map(([a,c])=>`<div><b>${c}×</b> ${esc(a)}</div>`).join('')}${f?`<small><b style="color:var(--amber)">${LB[st[i]]} — tentar de novo</b></small>`:''}${p?`<small><b>👤 ${esc(p)}</b></small>`:''}${n?`<small><b>📝 ${esc(n)}</b></small>`:''}${flags(i).length?`<small>${flags(i).map(x=>`<span class="hlb">🟧 ${esc(x)}</span>`).join('')}</small>`:''}
+  ${s.sv?'<small><span class="hlb" style="background:#e0f2fe;color:#075985">📌 posição salva</span></small>':''}<small><span class="tag">📦 ${pkd(i)&&pkd(i)<s.p.length?pkd(i)+'/':''}${s.p.length}</span>${esc(s.b)} · Shopee #${s.sp}</small>${st[i]!=='ok'&&E[i]?`<small>🕒 chega ~${hhmm(E[i])}${dl[nk(s)]&&dlMin(i)!=null&&mm(E[i])>dlMin(i)?` · <b style="color:#dc2626">⚠️ passa do prazo ${dl[nk(s)]}</b>`:''}${pin.includes(i)?' · 🔒 ordem fixa':''}</small>`:''}<small>🗺️ Zona: <select style="width:auto;padding:3px;font-size:12px" onchange="setZone(${i},this.value)">${zoneNames().map(z=>`<option ${z===zoneOf(i)?'selected':''}>${esc(z)}</option>`).join('')}<option value="__new">➕ Nova zona…</option></select></small>
+  <details><summary>Detalhes</summary>${s.p.map(x=>`<small>#${x[2]} · ${esc(x[1])}</small>`).join('')}${noteBox(i)}</details>
+  <a target="_blank" href="${sv_(i)}">📷 Fachada</a> · <a href="#" onclick="setHl(${i});return false">🟧 ${flags(i).length?'Tirar destaque':'Destacar'}</a> · <a href="#" onclick="pinIt(${i});return false">⏫ Fazer agora</a> · <a href="#" onclick="plan(S[${i}]);return false">📍 Estou aqui</a>${st[i]==='ok'?'':`<br><a href="#" onclick="moveStop(${i},-1);return false">⬆️ Subir</a> · <a href="#" onclick="moveStop(${i},1);return false">⬇️ Descer</a> · <a href="#" onclick="lockUntil(${i});return false">🔒 Travar até aqui</a> · <a href="#" onclick="cyclePr(${i});return false">⭐ ${['Prioridade: normal','Prioridade: primeiro','Prioridade: por último'][pr[nk(s)]||0]}</a> · <a href="#" onclick="setDl(${i});return false">⏰ ${dl[nk(s)]?'Prazo '+dl[nk(s)]:'Definir prazo'}</a>`}</div>
+  <input type="checkbox" ${st[i]==='ok'?'checked':''} onchange="tg(${i},this.checked)" style="width:20px;height:20px"></div>`}).join('');
+ if(doneL.length&&!qq&&!showAll)$('stops').insertAdjacentHTML('afterbegin','<div class="muted" style="margin:4px 0"><a href="#" onclick="showDone=!showDone;render();return false">'+(showDone?'▼ Ocultar ':'▶ Mostrar ')+doneL.length+' entregue'+(doneL.length>1?'s':'')+'</a></div>');
+ if(hid>0)$('stops').insertAdjacentHTML('beforeend','<button class="sec" style="margin-top:10px" onclick="showAll=true;render()">Ver as outras '+hid+' paradas</button>');
+ stats()}
+function snap(){const c=s=>S.filter((_,i)=>st[i]===s),pk=a=>a.reduce((n,x)=>n+x.p.length,0);
+ let d={},h={};try{d=JSON.parse(LS.get('rf-dias')||'{}');h=JSON.parse(LS.get('rf-hist')||'{}')}catch(e){}
+ const dn_=order.filter(i=>st[i]==='ok');let km_=0;for(let k=1;k<dn_.length;k++)km_+=mh(S[dn_[k-1]],S[dn_[k]])/1000;d[dsid]={km:+km_.toFixed(1),min:tm.length>1?Math.round((tm[tm.length-1]-tm[0])/60000):0,rotulo:label,pacotes:pk(S),paradas:S.length,entregues:S.reduce((n,_,i)=>n+pkd(i),0),ausentes:S.reduce((n,s,i)=>n+(st[i]==='aus'?s.p.length-pkd(i):0),0),naoachou:S.reduce((n,s,i)=>n+(st[i]==='nao'?s.p.length-pkd(i):0),0),em:Date.now()};LS.set('rf-dias',JSON.stringify(d));
+ S.forEach((s,i)=>{const k=nk(s);h[k]=h[k]||{};if(st[i])h[k][dsid]=st[i];else delete h[k][dsid]});LS.set('rf-hist',JSON.stringify(h))}
+const saveSt=()=>{LS.set('rf-st-'+dsid,JSON.stringify(st));snapSoon()};
+function hist(i){let h={};try{h=JSON.parse(LS.get('rf-hist')||'{}')}catch(e){}
+ const v=Object.entries(h[nk(S[i])]||{}).filter(([k])=>k!==dsid).map(x=>x[1]),ok=v.filter(x=>x==='ok').length,bad=v.length-ok;
+ return v.length?`<div class="muted">🕘 Neste endereço: ${ok} entrega${ok==1?'':'s'} feita${ok==1?'':'s'}${bad?` · <b style="color:var(--amber)">${bad} não entregue${bad>1?'s':''}</b>`:''}</div>`:''}
+$('hb').onclick=()=>{snap();const b=$('histbox');if(!b.hidden){b.hidden=true;return}let d={};try{d=JSON.parse(LS.get('rf-dias')||'{}')}catch(e){}
+ const ks=Object.keys(d).sort((a,b)=>d[b].em-d[a].em),vp=Number($('ppk').value)||0,cs=Number($('cons').value)||10,fp=Number($('fuel').value)||0;
+ const line=(x,l)=>{const km=x.km||0,comb=km/cs*fp,rec=x.entregues*vp;return '<div class="muted">'+l+' — '+x.entregues+'/'+x.pacotes+' pacotes'+(x.ausentes+x.naoachou?' · '+(x.ausentes+x.naoachou)+' não entregues':'')+(km?' · ~'+fmt(km)+' km (estimado)':'')+(x.min?' · '+fmt(x.min/60)+' h':'')+(vp?' · receita R$ '+fmt(rec)+' · combustível R$ '+fmt(comb)+' · <b>sobra R$ '+fmt(rec-comb)+'</b>':'')+'</div>'};
+ const w=ks.filter(k=>Date.now()-d[k].em<7*864e5).reduce((a,k)=>({entregues:a.entregues+d[k].entregues,pacotes:a.pacotes+d[k].pacotes,ausentes:a.ausentes+d[k].ausentes,naoachou:a.naoachou+d[k].naoachou,km:a.km+(d[k].km||0),min:a.min+(d[k].min||0)}),{entregues:0,pacotes:0,ausentes:0,naoachou:0,km:0,min:0});
+ b.innerHTML=ks.length?'<div class="muted"><b>Últimos 7 dias</b></div>'+line(w,'Semana')+'<div class="muted" style="margin-top:8px"><b>Dias</b></div>'+ks.map(k=>line(d[k],esc(d[k].rotulo))).join(''):'<div class="muted">Ainda sem histórico. Marque entregas para começar.</div>';b.hidden=false};
+$('bk').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(cache)],{type:'application/json'}));a.download='rota_facil_backup.json';a.click()};
+function setSt(i,v){const pv=st[i],pp=S[i].p.map(x=>!!pd[x[1]]);undo={i,pv,pp,tm:v==='ok'};st[i]=v;if(v==='ok'){S[i].p.forEach(x=>{pd[x[1]]=1});savePd();recTime()}if(v==='ok'||v==='aus')capturePoint(i,false);saveSt();showToast(v);quickOK()?quickPlan(S[i]):plan(S[i])}
+function togglePk(i,n){const tn=S[i].p[n][1];if(pd[tn])delete pd[tn];else pd[tn]=1;savePd();
+ if(S[i].p.every(x=>pd[x[1]]))return setSt(i,'ok');const was=st[i]==='ok';if(was)delete st[i];saveSt();was?plan(cur):render()}
+function tg(i,on){if(on)setSt(i,'ok');else{delete st[i];S[i].p.forEach(x=>{delete pd[x[1]]});savePd();saveSt();plan(cur)}}
+function pinIt(i){pin=pin.filter(x=>x!==i);pin.unshift(i);saveRef();if(st[i]){delete st[i];saveSt()}plan(cur)}
+function go(a,la,lo){ // links https universais: o celular entrega ao aplicativo instalado
+ const u={gm:`https://www.google.com/maps/dir/?api=1&destination=${la},${lo}&travelmode=driving`,wz:`https://waze.com/ul?ll=${la},${lo}&navigate=yes`,he:`https://share.here.com/r/mylocation/${la},${lo}?m=d`}[a];
+ if(a==='he'&&/Android/i.test(navigator.userAgent)){location.href='intent://share.here.com/r/mylocation/'+la+','+lo+'?m=d#Intent;scheme=https;package=com.here.app.maps;S.browser_fallback_url='+encodeURIComponent(u)+';end';return}
+ const w=window.open(u,'_blank');if(!w){$('status').textContent='O visualizador bloqueou a abertura. Abra este arquivo no Chrome para usar os botões de navegação.'}}
+const gErr=e=>{$('status').textContent=!window.isSecureContext?'Este modo de abertura não permite GPS. Abra o arquivo no Chrome (ou hospede em https).':e&&e.code===1?'Localização bloqueada. Se o app estiver aberto dentro do Claude, abra o arquivo no Chrome e permita a localização.':e&&e.code===2?'Não consegui obter sua posição. Ligue o GPS do celular e tente de novo.':'Tempo esgotado ao buscar o GPS. Vá para um local aberto e tente de novo.'};
+$('gps').onclick=()=>{if(!navigator.geolocation){$('status').textContent='GPS indisponível neste navegador.';return}
+ $('status').textContent='Buscando sua localização…';
+ navigator.geolocation.getCurrentPosition(p=>{me={la:p.coords.latitude,lo:p.coords.longitude};plan(me);map.setView([me.la,me.lo],16)},gErr,{enableHighAccuracy:true,timeout:15000,maximumAge:10000})};
+$('fol').onclick=()=>{const b=$('fol');
+ if(wid!=null){navigator.geolocation.clearWatch(wid);wid=null;b.textContent='🛰️ Seguir GPS: desligado';return}
+ if(!navigator.geolocation)return;
+ wid=navigator.geolocation.watchPosition(p=>{const q={la:p.coords.latitude,lo:p.coords.longitude},now=Date.now();arrive(q);
+  if(lastP&&mh(lastP,q)<30&&now-lastT<25000)return;lastP=q;lastT=now;me=q;quickOK()?quickPlan(q,true):planT(q)},e=>{wid=null;b.textContent='🛰️ Seguir GPS: desligado';gErr(e)},{enableHighAccuracy:true,maximumAge:5000});
+ b.textContent='🛰️ Seguir GPS: ligado'};
+$('rst').onclick=()=>{pin=[];pr={};dl={};saveRef();st={};pd={};savePd();tm=[];LS.set('rf-tm-'+dsid,'[]');saveSt();order=[];plan(me)};
+['real','cons','fuel','svc','kmh'].forEach(id=>$(id).onchange=()=>id==='real'?plan(cur):stats());
+$('q').oninput=render;
+$('cp').onclick=async()=>{const pk=a=>a.reduce((n,s)=>n+s.p.length,0),dn=S.filter((_,i)=>st[i]==='ok'),lf=S.filter((_,i)=>!st[i]),bd=S.map((s,i)=>[s,i]).filter(([s,i])=>st[i]&&st[i]!=='ok');
+ const t=`Resumo ${new Date().toLocaleDateString('pt-BR')}\nEntregues: ${S.reduce((n,_,i)=>n+pkd(i),0)} pacotes (${dn.length} paradas completas)\nPendentes: ${S.reduce((n,s,i)=>n+(st[i]?0:s.p.length-pkd(i)),0)} pacotes\nNão entregues: ${S.reduce((n,s,i)=>n+(st[i]&&st[i]!=='ok'?s.p.length-pkd(i):0),0)} pacotes`+bd.map(([s,i])=>`\n- ${LB[st[i]]}: ${s.p.map(x=>x[0]).join(' / ')}`).join('');
+ try{await navigator.clipboard.writeText(t);$('status').textContent='Resumo copiado.'}catch(e){$('status').textContent=t}};
+$('exp').onclick=()=>{const h=['Ordem','Parada Shopee','Sequência','Pacotes','Status','Destinatário','Observação','Endereço','Bairro','CEP','Código','Latitude','Longitude','Destaque'];
+ const rows=[];order.forEach((i,k)=>{const s=S[i];s.p.forEach(x=>rows.push([k+1,s.sp,x[2],1,st[i]==='ok'||pd[x[1]]?'Entregue':st[i]?LB[st[i]].slice(3):'Pendente',nm[nk(s)]||'',nt[nk(s)]||'',x[0],s.b,s.z,x[1],s.la,s.lo,flags(i).join('; ')]))});
+ const csv=[h,...rows].map(r=>r.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(';')).join('\r\n');
+ const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['\ufeff'+csv],{type:'text/csv;charset=utf-8'}));a.download='rota_facil_entregas.csv';a.click()};
+const xml=s=>s.replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&apos;/g,"'").replace(/&amp;/g,'&');
+async function readXlsx(buf){ // leitor próprio de .xlsx (não depende de biblioteca externa)
+ const dv=new DataView(buf),u8=new Uint8Array(buf);let e=u8.length-22;while(e>=0&&dv.getUint32(e,true)!==0x06054b50)e--;
+ if(e<0)throw new Error('arquivo não é .xlsx');
+ let n=dv.getUint16(e+10,true),p=dv.getUint32(e+16,true);const files={};
+ for(let i=0;i<n;i++){const m=dv.getUint16(p+10,true),cs=dv.getUint32(p+20,true),nl=dv.getUint16(p+28,true),xl=dv.getUint16(p+30,true),cl=dv.getUint16(p+32,true),off=dv.getUint32(p+42,true);
+  files[new TextDecoder().decode(u8.subarray(p+46,p+46+nl))]={m,cs,off};p+=46+nl+xl+cl}
+ const get=async nm=>{const f=files[nm];if(!f)return '';const o=f.off,d=u8.subarray(o+30+dv.getUint16(o+26,true)+dv.getUint16(o+28,true),0);
+  const st=o+30+dv.getUint16(o+26,true)+dv.getUint16(o+28,true),dd=u8.subarray(st,st+f.cs);
+  if(f.m===0)return new TextDecoder().decode(dd);
+  return await new Response(new Blob([dd]).stream().pipeThrough(new DecompressionStream('deflate-raw'))).text()};
+ const ss=[...(await get('xl/sharedStrings.xml')).matchAll(/<si>([\s\S]*?)<\/si>/g)].map(m=>xml([...m[1].matchAll(/<t[^>]*>([\s\S]*?)<\/t>/g)].map(t=>t[1]).join('')));
+ const sn=Object.keys(files).filter(k=>/^xl\/worksheets\/sheet\d+\.xml$/.test(k)).sort()[0],sh=await get(sn),R=[];
+ for(const rm of sh.matchAll(/<row[^>]*>([\s\S]*?)<\/row>/g)){const r=[];
+  for(const cm of rm[1].matchAll(/<c ([^>]*?)(?:\/>|>([\s\S]*?)<\/c>)/g)){const at=cm[1],ref=/r="([A-Z]+)/.exec(at)[1],ty=(/t="(\w+)"/.exec(at)||[])[1],b=cm[2]||'';let col=0;for(const ch of ref)col=col*26+ch.charCodeAt(0)-64;
+   let v=(/<v>([\s\S]*?)<\/v>/.exec(b)||[])[1];
+   if(ty==='s')v=ss[+v];else if(ty==='inlineStr')v=xml([...b.matchAll(/<t[^>]*>([\s\S]*?)<\/t>/g)].map(t=>t[1]).join(''));else if(v!=null)v=(ty==='str'||isNaN(+v))?xml(v):+v;
+   r[col-1]=v}R.push(r)}
+ const h=(R[0]||[]).map(x=>String(x||'').trim());return R.slice(1).map(r=>Object.fromEntries(h.map((k,i)=>[k,r[i]])))}
+
+$('file').onchange=async e=>{const f=e.target.files[0];if(!f)return;$('status').textContent='Lendo planilha…';
+ try{if(/\.json$/i.test(f.name)){const b=JSON.parse(await f.text());Object.keys(cache).forEach(k=>{if(!(k in b))LS.del(k)});Object.keys(b).forEach(k=>LS.set(k,b[k]));$('status').textContent='Backup restaurado. Recarregando…';setTimeout(()=>location.reload(),600);e.target.value='';return}
+  const buf=await f.arrayBuffer();let rows;
+  if(/\.csv$/i.test(f.name))rows=parseCsv(new TextDecoder().decode(buf));
+  else try{rows=await readXlsx(buf)}catch(e1){if(typeof XLSX==='undefined')throw e1;const wb=XLSX.read(buf);rows=XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]])}
+  rows=normRows(rows);
+  const g=new Map();
+  let nUsed=0;rows.forEach(r=>{let la=Number(String(r['Latitude']).replace(',','.')),lo=Number(String(r['Longitude']).replace(',','.'));if(!isFinite(la)||!isFinite(lo)||!r['Destination Address'])return;
+   const sv=pts[akey(String(r['Zipcode/Postal code']||''),String(r['Destination Address']).trim())],useSv=!!(sv&&sv.src!=='shopee');if(useSv){la=sv.la;lo=sv.lo;nUsed++}
+   const k=la.toFixed(6)+','+lo.toFixed(6),sp=Number(r['Stop'])||0;
+   if(!g.has(k))g.set(k,{la:+la.toFixed(6),lo:+lo.toFixed(6),sp,b:String(r['Bairro']||'').toLowerCase().replace(/(^|\s)\p{L}/gu,c=>c.toUpperCase()).trim(),z:String(r['Zipcode/Postal code']||''),p:[]});
+   const s=g.get(k);if(useSv)s.sv=1;if(sp&&(!s.sp||sp<s.sp))s.sp=sp;s.p.push([String(r['Destination Address']).trim(),String(r['SPX TN']||''),Number(r['Sequence'])||0])});
+  const d=[...g.values()];if(!d.length)throw new Error('sem endereços com latitude e longitude');
+  const id=f.name+'-'+Date.now(),mm=/(\d{2})-(\d{2})-(\d{4})/.exec(f.name),lb=mm?`${mm[1]}/${mm[2]}/${mm[3]}`:new Date().toLocaleDateString('pt-BR');LS.set('rf-data',JSON.stringify({id,S:d,ts:Date.now(),label:lb}));load(d,id,lb);map.fitBounds(L.latLngBounds(d.map(s=>[s.la,s.lo])).pad(.08));await plan(me);
+  $('status').textContent=`Importado: ${d.reduce((a,x)=>a+x.p.length,0)} pacotes em ${d.length} paradas${nUsed?` (${nUsed} com posição gravada em entregas anteriores)`:''}. `+$('status').textContent}
+ catch(err){$('status').textContent='Não consegui ler a planilha ('+(err&&err.message||err)+'). Use o .xlsx exportado da Shopee.'}
+ e.target.value=''};
+function clearData(){
+ if(!confirm('Apagar a lista de entregas atual e as marcações (entregue, ausente, não achei)?\n\nDica: faça o 💾 Backup antes, se quiser guardar.'))return;
+ const all=confirm('Apagar TAMBÉM nomes, observações, zonas, destaques, posições gravadas e o histórico dos dias?\n\nOK = apagar tudo\nCancelar = manter esses dados');
+ ['rf-st-'+dsid,'rf-pd-'+dsid,'rf-tm-'+dsid,'rf-pin-'+dsid,'rf-pr-'+dsid,'rf-dl-'+dsid].concat(all?['rf-nm','rf-nt','rf-zn','rf-hm','rf-hist','rf-dias','rf-pts']:[]).forEach(k=>LS.del(k));
+ if(all){nm={};nt={};zn={};hm={};pts={}}
+ LS.set('rf-data',JSON.stringify({id:'vazio',S:[],ts:Date.now(),label:'',vazio:1}));
+ if(line){map.removeLayer(line);line=null}
+ load([],'vazio','');plan(null);$('status').textContent='Dados apagados'+(all?' (incluindo observações e histórico)':' (observações e histórico mantidos)')+'. Toque em 📂 Importar planilha para começar outra.'}
+$('clr').onclick=clearData;
+const APP_VER='4';
+/* ---- avisos, desfazer, ritmo ---- */
+let undo=null,tt=null,arrivedFor=-1;
+function toast(msg,label,fn){$('tmsg').textContent=msg;const b=$('tact');b.hidden=!label;b.textContent=label||'';b.onclick=()=>{if(fn)fn();$('toast').hidden=true};$('toast').hidden=false;clearTimeout(tt);tt=setTimeout(()=>{$('toast').hidden=true},7000)}
+function showToast(v){const m={ok:'✔ Entregue',aus:'🚪 Ausente',nao:'❓ Não achei'}[v];if(m&&undo)toast(m+' registrado','Desfazer',doUndo)}
+function doUndo(){if(!undo)return;const u=undo;undo=null;if(u.pv)st[u.i]=u.pv;else delete st[u.i];
+ S[u.i].p.forEach((x,n)=>{if(u.pp[n])pd[x[1]]=1;else delete pd[x[1]]});savePd();if(u.tm){tm.pop();LS.set('rf-tm-'+dsid,JSON.stringify(tm))}saveSt();quickOK()?quickPlan(S[u.i]):plan(S[u.i])}
+function recTime(){tm.push(Date.now());LS.set('rf-tm-'+dsid,JSON.stringify(tm))}
+function paceAvg(){const iv=tm.slice(1).map((t,k)=>(t-tm[k])/60000).filter(m=>m>0.2&&m<45).slice(-10);return{n:iv.length,avg:iv.length?iv.reduce((a,b)=>a+b,0)/iv.length:0}}
+/* ---- aviso de chegada ---- */
+const beep=()=>{try{const a=new(window.AudioContext||window.webkitAudioContext)(),o=a.createOscillator(),g=a.createGain();o.connect(g);g.connect(a.destination);o.frequency.value=880;g.gain.value=.15;o.start();setTimeout(()=>{o.stop();a.close()},350)}catch(e){}};
+function arrive(q){const nx=order.find(i=>st[i]!=='ok');if(nx==null||arrivedFor===nx||mh(q,S[nx])>40)return;arrivedFor=nx;try{navigator.vibrate&&navigator.vibrate([250,120,250])}catch(e){}beep();toast('📍 Você chegou: '+S[nx].p[0][0].slice(0,38));render()}
+/* ---- modo noturno ---- */
+function setDark(on){document.body.classList.toggle('dark',on);$('dk').textContent=on?'☀️ Modo claro':'🌙 Modo noturno';const m=document.querySelector('meta[name=theme-color]');if(m)m.content=on?'#0b1220':'#12233f'}
+$('dk').onclick=()=>{const on=!document.body.classList.contains('dark');LS.set('rf-dark',on?'1':'0');setDark(on)};
+$('ppk').oninput=()=>LS.set('rf-ppk',$('ppk').value);
+/* ---- conferir pacote ---- */
+let sStream=null,sTimer=null;
+function checkCode(code){const c=String(code||'').trim().toUpperCase().replace(/\s/g,'');if(c.length<4)return;const r=$('sres');
+ let hit=null,cnt=0;S.forEach((s,i)=>s.p.forEach((x,n)=>{const t=String(x[1]).toUpperCase();if(t===c||(c.length>=5&&(t.endsWith(c)||c.endsWith(t)||t.includes(c)))){cnt++;hit=[i,n]}}));
+ if(!cnt){r.innerHTML='❌ Código não encontrado na planilha de hoje.';return}
+ if(cnt>1){r.innerHTML='⚠️ '+cnt+' pacotes parecem com esse código. Digite mais dígitos.';return}
+ const [i]=hit,nx=order.find(j=>st[j]!=='ok'),s=S[i];
+ if(i===nx){r.innerHTML='✅ <b>Confere!</b> Este pacote é desta parada.';return}
+ r.innerHTML='⚠️ <b>Atenção:</b> este pacote é de outra parada:<br>'+esc(s.p[0][0])+'<br><button class="sec" onclick="pinIt('+i+');closeScan()" style="margin-top:6px">⏫ Ir para essa parada</button>'}
+async function openScan(){$('scan').hidden=false;$('sres').textContent='Aponte para o código de barras da etiqueta.';$('scode').value='';
+ if(!('BarcodeDetector' in window)||!navigator.mediaDevices){$('sres').textContent='Este navegador não tem leitor de código de barras. Digite o código abaixo.';return}
+ try{sStream=await navigator.mediaDevices.getUserMedia({video:{facingMode:'environment'}});const v=$('sv');v.srcObject=sStream;await v.play();
+  const bd=new BarcodeDetector({formats:['code_128','code_39','qr_code','ean_13','itf']});
+  sTimer=setInterval(async()=>{try{const r=await bd.detect(v);if(r.length)checkCode(r[0].rawValue)}catch(e){}},400)}
+ catch(e){$('sres').textContent='Não consegui abrir a câmera. Digite o código abaixo.'}}
+function closeScan(){$('scan').hidden=true;clearInterval(sTimer);if(sStream){sStream.getTracks().forEach(t=>t.stop());sStream=null}}
+$('sgo').onclick=()=>checkCode($('scode').value);$('sclose').onclick=closeScan;$('tourok').onclick=()=>{LS.set('rf-tour','1');$('tour').hidden=true};
+/* ---- importar outros formatos (nomes de colunas alternativos e CSV) ---- */
+const ALIAS={'Latitude':['latitude','lat'],'Longitude':['longitude','lng','lon','long'],'Destination Address':['destination address','endereco','address','endereco de entrega','destino'],'Bairro':['bairro','neighborhood','district'],'Zipcode/Postal code':['zipcode/postal code','cep','zip','postal code','zipcode'],'SPX TN':['spx tn','tracking','rastreio','codigo','codigo de rastreio','tracking number','awb'],'Sequence':['sequence','sequencia','seq'],'Stop':['stop','parada']};
+function normRows(rows){if(!rows.length)return rows;const map={};Object.keys(rows[0]).forEach(k=>{const n=norm(k).trim();for(const c in ALIAS)if(ALIAS[c].some(a=>a===n))map[k]=c});return rows.map(r=>{const o={};for(const k in r)o[map[k]||k]=r[k];return o})}
+function parseCsv(t){t=t.replace(/^\ufeff/,'');const f=t.split(/\r?\n/)[0],sep=(f.match(/;/g)||[]).length>(f.match(/,/g)||[]).length?';':',',R=[];let row=[],c='',q=false;
+ for(let i=0;i<t.length;i++){const ch=t[i];if(q){if(ch==='"'){if(t[i+1]==='"'){c+='"';i++}else q=false}else c+=ch}else if(ch==='"')q=true;else if(ch===sep){row.push(c);c=''}else if(ch==='\n'||ch==='\r'){if(ch==='\r'&&t[i+1]==='\n')i++;row.push(c);c='';R.push(row);row=[]}else c+=ch}
+ if(c||row.length){row.push(c);R.push(row)}const h=(R[0]||[]).map(x=>x.trim());return R.slice(1).filter(r=>r.some(x=>x.trim())).map(r=>Object.fromEntries(h.map((k,i)=>[k,r[i]])))}
+function checkVer(){if(!/^https?:/.test(location.protocol))return;fetch(location.pathname,{cache:'reload'}).then(r=>r.text()).then(t=>{const m=/const APP_VER='(\d+)'/.exec(t);if(m&&+m[1]>+APP_VER)toast('🔄 Nova versão do app disponível','Atualizar',()=>location.reload())}).catch(()=>{})}
+const hhmm=t=>new Date(t).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'}),mm=t=>{const x=new Date(t);return x.getHours()*60+x.getMinutes()};
+const dlMin=i=>{const v=dl[nk(S[i])];return v?(+v.slice(0,2))*60+(+v.slice(3,5)):null};
+function optSub(start,idxList){if(!idxList.length)return [];const nodes=[start,...idxList.map(i=>S[i])];return opt(idxList.length,(a,b)=>mh(nodes[a],nodes[b]),[null,...idxList.map(i=>S[i].k)],start.k||null).map(n=>idxList[n-1])}
+function etas(){const m={},rest=order.filter(i=>st[i]!=='ok'),pc=paceAvg(),kmh=Number($('kmh').value)||20,svc=Number($('svc').value)||0;let t=Date.now(),p=cur;if(!p)return m;for(const i of rest){t+=(pc.n>=3?pc.avg:mh(p,S[i])/1000/kmh*60+svc)*6e4;m[i]=t;p=S[i]}return m}
+const saveRef=()=>{LS.set('rf-pin-'+dsid,JSON.stringify(pin));LS.set('rf-pr-'+dsid,JSON.stringify(pr));LS.set('rf-dl-'+dsid,JSON.stringify(dl))};
+function moveStop(i,dir){const pl=order.filter(j=>!st[j]),k=pl.indexOf(i),n=k+dir;if(k<0||n<0||n>=pl.length)return;[pl[k],pl[n]]=[pl[n],pl[k]];pin=pl.slice(0,Math.max(k,n)+1);saveRef();plan(cur)}
+function lockUntil(i){const pl=order.filter(j=>!st[j]),k=pl.indexOf(i);if(k<0)return;pin=pl.slice(0,k+1);saveRef();plan(cur)}
+function cyclePr(i){const k=nk(S[i]),v=pr[k]||0;if(v===0)pr[k]=1;else if(v===1)pr[k]=2;else delete pr[k];saveRef();plan(cur)}
+function setDl(i){const k=nk(S[i]),r=prompt('Entregar até que horas? (HH:MM — deixe vazio para remover)',dl[k]||'');if(r===null)return;const v=r.trim();
+ if(v==='')delete dl[k];else if(/^([01]?\d|2[0-3]):[0-5]\d$/.test(v))dl[k]=v.padStart(5,'0');else{toast('Hora inválida. Use HH:MM, por exemplo 15:30');return}saveRef();plan(cur)}
+$('endb').onclick=async()=>{if(endPt){endPt=null;LS.set('rf-end','null');plan(cur);return}const p=await getPos();if(!p){$('status').textContent='Não consegui pegar o GPS para definir o ponto final.';return}endPt={la:p.la,lo:p.lo};LS.set('rf-end',JSON.stringify(endPt));plan(cur)};
+$('reopt').onclick=()=>{pin=[];pr={};dl={};saveRef();plan(cur)};
+/* ---- agrupar por rua ---- */
+let mk={},endMk=null,showAll=false,showDone=false,lastFull=0,drT=null,pendingRender=false;const LIMV=50;
+let T1=800,T2=1800,PENV=800,lastR=null,lastG=null,passN={},ballOfNode=[],RAD=250;
+function streetOf(a){const cut=x=>x.replace(/^(\S+(?:\s+\S+)?)\s+(setor|residencial|jardim|vila|bairro)\b.*$/i,'$1');
+ const s=String(a).split(/,|\bs\/?n\b|\bqd\b|\bquadra\b|\blt\b|\blote\b|\bq\d/i)[0];
+ const label=cut(s.replace(/\s+/g,' ').trim());
+ const key=cut(norm(s).replace(/\./g,' ').replace(/^\s*r\s+/,'rua ').replace(/^\s*av\s+/,'avenida ').replace(/\s+/g,' ').trim());
+ return{label:label||'(sem rua)',key}}
+function applyGm(){const rr=gm==='rua'||gm==='perto';PENV=rr?800:300;S.forEach((x,i)=>{x.k=rr?x.kr:gm==='quadra'?x.kq:'solo'+i})}
+function groupInit(m,d,ks){ // ordem inicial rua por rua: vai para a rua mais perto e termina ela antes de sair
+ const gs=new Map();for(let n=1;n<=m;n++){const k=ks[n];if(!gs.has(k))gs.set(k,[]);gs.get(k).push(n)}
+ const out=[];let last=0;
+ while(gs.size){let bk=null,bd=1e18;for(const [k,ids] of gs){const v=Math.min(...ids.map(n=>d(last,n)));if(v<bd){bd=v;bk=k}}
+  const ids=gs.get(bk);gs.delete(bk);const mp=[last,...ids];
+  const loc=ids.length>2?opt(ids.length,(a,b)=>d(mp[a],mp[b]),[null,...ids.map(()=>null)],null):ids.length===2?(d(mp[0],mp[1])<=d(mp[0],mp[2])?[1,2]:[2,1]):[1];
+  loc.forEach(l=>out.push(mp[l]));last=out[out.length-1]}
+ return out}
+function streetText(){const rest=order.filter(i=>st[i]!=='ok'),runs=new Map();let pv=null;
+ for(const i of rest){const k=S[i].kr;if(k!==pv){runs.set(k,(runs.get(k)||0)+1);pv=k}}
+ if(!runs.size)return '';const pass=[...runs.values()].reduce((a,b)=>a+b,0),multi=[...runs].filter(([,n])=>n>1).map(([k])=>S.find(s=>s.kr===k).r);
+ return '🛣️ '+runs.size+' ruas · '+pass+' passagens'+(multi.length?' · ⚠️ passa mais de 1 vez em: '+multi.slice(0,4).join(', '):' · cada rua uma vez só ✅')}
+function hdrS(i){const s=S[i];if(st[i]==='ok')return '';
+ if(gm==='perto'&&s.g!=null){if(lastG===s.g)return '';lastG=s.g;const js=order.filter(j=>st[j]!=='ok'&&S[j].g===s.g),pk=js.reduce((a,j)=>a+S[j].p.length,0);return '<div class="muted" style="font-weight:800;margin:12px 0 2px;color:#2166e8">📍 Região '+(s.g+1)+' · '+js.length+' parada'+(js.length>1?'s':'')+' · '+pk+' pacote'+(pk>1?'s':'')+'</div>'}
+ if(lastR===s.kr)return '';lastR=s.kr;passN[s.kr]=(passN[s.kr]||0)+1;
+ const n=order.filter(j=>st[j]!=='ok'&&S[j].kr===s.kr).reduce((a,j)=>a+S[j].p.length,0),pn=passN[s.kr];
+ return '<div class="muted" style="font-weight:700;margin:10px 0 2px;color:'+(pn>1?'#dc2626':'inherit')+'">🛣️ '+esc(s.r)+' · '+n+' pacote'+(n>1?'s':'')+(pn>1?' · ⚠️ '+pn+'ª passagem':'')+'</div>'}
+function perto(m,d,ks,nodes,base,endD){ // 1º: entrega tudo o que está perto de você; depois: melhor caminho para o resto
+ const mh2=(a,b)=>mh(nodes[a],nodes[b]);ballOfNode=[];const t1=T1,t2=T2;T1=Math.min(T1,300);T2=Math.min(T2,650);
+ const all=[];for(let n=1;n<=m;n++)all.push(n);
+ let ids=all.filter(n=>mh2(0,n)<=RAD);
+ if(!ids.length){let bn=-1,bd=1e18;for(const n of all){const v=d(0,n);if(v<bd){bd=v;bn=n}}ids=all.filter(n=>n===bn||mh2(bn,n)<=RAD)}
+ const sub=(start,list,end,force)=>{if(force&&list.length>1){let f=list[0],bd=d(start,f);for(const n of list){const v=d(start,n);if(v<bd){bd=v;f=n}}return [f,...sub(f,list.filter(n=>n!==f),end)]}if(list.length<3)return list.length===2?(d(start,list[0])<=d(start,list[1])?list.slice():[list[1],list[0]]):list.slice();
+  const mp=[start,...list],dl=(a,b)=>d(mp[a],mp[b]),kl=[null,...list.map(n=>ks[n])];
+  return opt(list.length,dl,kl,ks[start]||null,end?(a=>end(mp[a])):null,groupInit(list.length,dl,kl)).map(l=>mp[l])};
+ const first=sub(0,ids,null,true),inF=new Set(first),rest=all.filter(n=>!inF.has(n));
+ const second=rest.length?sub(first[first.length-1],rest,endD):[],out=[...first,...second];
+ first.forEach(n=>{ballOfNode[n]=0});let g=0,anchor=null;second.forEach(n=>{if(anchor==null||mh2(anchor,n)>RAD){anchor=n;g++}ballOfNode[n]=g});
+ T1=t1;T2=t2;return out}
+$('gm').onchange=()=>{gm=$('gm').value;LS.set('rf-gm',gm);applyGm();plan(cur)};
+$('rad').onchange=()=>{RAD=Math.max(50,Number($('rad').value)||250);LS.set('rf-rad',String(RAD));plan(cur)};
+/* ---- fluidez: atualização rápida sem recalcular a rota inteira ---- */
+function popHtml(i){const s=S[i],k=order.indexOf(i)+1;return '<b>Parada '+k+'</b> · 📦 '+s.p.length+'<br>'+G(s).map(([a,c])=>c+'× '+esc(a)).join('<br>')+'<br>'+esc(s.b)+' · CEP '+esc(s.z)+'<br><a target="_blank" href="'+sv_(i)+'">📷 Fachada</a>'}
+const typingNow=()=>{const a=document.activeElement;return !!a&&(a.tagName==='TEXTAREA'||(a.tagName==='INPUT'&&!['checkbox','file','number'].includes(a.type)))&&!!(a.closest&&(a.closest('#nextp')||a.closest('#stops')))};
+document.addEventListener('focusout',()=>{if(pendingRender){pendingRender=false;setTimeout(render,60)}});
+let snT=null;const snapSoon=()=>{clearTimeout(snT);snT=setTimeout(snap,900)};
+function quickOK(){return gm==='perto'&&!$('zon').checked&&!pin.some(i=>!st[i])&&!Object.keys(pr).length&&!Object.keys(dl).length&&order.length>0&&S.length>0}
+function quickPlan(s,soft){ // atualização rápida: mantém o resto da rota e só decide a próxima região
+ const idx=S.map((_,i)=>i),prev=order.filter(i=>st[i]==='ok'),oks=prev.concat(idx.filter(i=>st[i]==='ok'&&!prev.includes(i)));
+ const old=order.filter(i=>!st[i]),pend=old.concat(idx.filter(i=>!st[i]&&!old.includes(i))),fl=order.filter(i=>st[i]&&st[i]!=='ok');
+ tok++;cur=s||cur;
+ const part=pend.filter(i=>pkd(i)>0&&pkd(i)<S[i].p.length),rest0=pend.filter(i=>!part.includes(i));let head=[];
+ if(rest0.length){let ball=rest0.filter(i=>mh(cur,S[i])<=RAD);
+  if(!ball.length){let bn=rest0[0],bd=mh(cur,S[bn]);for(const j of rest0){const v=mh(cur,S[j]);if(v<bd){bd=v;bn=j}}ball=rest0.filter(j=>j===bn||mh(S[bn],S[j])<=RAD)}
+  let f=ball[0],bd=mh(cur,S[f]);for(const j of ball){const v=mh(cur,S[j]);if(v<bd){bd=v;f=j}}
+  const t1=T1,t2=T2;T1=40;T2=120;head=[f,...optSub(S[f],ball.filter(j=>j!==f))];T1=t1;T2=t2}
+ const hs=new Set(head),tail=rest0.filter(i=>!hs.has(i));
+ order=oks.concat(part,head,tail,fl);
+ qHead=head;assignG(head,tail);
+ $('status').textContent='Rota ajustada a partir de onde você está. Use 🔄 Otimizar de novo para recalcular tudo.';
+ if(soft&&typingNow())pendingRender=true;else render();
+ clearTimeout(drT);drT=setTimeout(()=>drawRoute(++tok),700);clearTimeout(rfT);rfN=0;rfT=setTimeout(refineTail,1800)}
+let qHead=[],rfT=null,rfN=0;
+function assignG(head,tail){S.forEach(x=>{x.g=null});let g=0,anchor=null;head.forEach(i=>{S[i].g=0});tail.forEach(i=>{if(anchor==null||mh(S[anchor],S[i])>RAD){anchor=i;g++}S[i].g=g})}
+function refineTail(){ // em segundo plano, melhora aos poucos o resto da rota (sem travar: ~0,3 s por vez)
+ if(!quickOK()||!qHead.length&&!order.length)return;
+ const idx=S.map((_,i)=>i),oks=order.filter(i=>st[i]==='ok'),fl=order.filter(i=>st[i]&&st[i]!=='ok');
+ const part=order.filter(i=>!st[i]&&pkd(i)>0&&pkd(i)<S[i].p.length),head=qHead.filter(i=>!st[i]&&!part.includes(i));
+ const tail=order.filter(i=>!st[i]&&!part.includes(i)&&!head.includes(i));if(tail.length<4)return;
+ const start=head.length?S[head[head.length-1]]:cur,nodes=[start,...tail.map(i=>S[i])],dl=(a,b)=>mh(nodes[a],nodes[b]),kl=[null,...tail.map(i=>S[i].k)];
+ const plen=ns=>{let t=0,p=0;for(const n of ns){t+=dl(p,n);p=n}return t},before=plen(tail.map((_,j)=>j+1));
+ const t1=T1,t2=T2;T1=0;T2=300;const nn_=opt(tail.length,dl,kl,start.k||null,null,tail.map((_,j)=>j+1));T1=t1;T2=t2;
+ const after=plen(nn_);if(after>=before-1)return;
+ order=oks.concat(part,head,nn_.map(n=>tail[n-1]),fl);assignG(head,order.filter(i=>!st[i]&&!part.includes(i)&&!head.includes(i)));
+ if(typingNow())pendingRender=true;else render();
+ if(after<before*0.98&&rfN<6){rfN++;rfT=setTimeout(refineTail,700)}}
+function planT(q){if(Date.now()-lastFull>20000)plan(q)}
+$('upd').onclick=async()=>{$('status').textContent='Buscando a versão mais nova…';
+ try{if('serviceWorker' in navigator){for(const r of await navigator.serviceWorker.getRegistrations())await r.unregister()}if(window.caches){for(const k of await caches.keys())await caches.delete(k)}await fetch(location.pathname,{cache:'reload'})}catch(e){}
+ location.reload()};
+let wl=null;
+
+
+
+async function wake(on){try{if(on&&navigator.wakeLock){wl=await navigator.wakeLock.request('screen')}else if(wl){await wl.release();wl=null}}catch(e){$('status').textContent='Não consegui manter a tela ligada neste navegador.'}}
+function drive(on){document.body.classList.toggle('drive',on);$('drv').textContent=on?'🚗 Modo dirigindo: ligado':'🚗 Modo dirigindo: desligado';wake(on);if(on&&wid==null&&navigator.geolocation)$('fol').onclick();window.scrollTo(0,0)}
+$('drv').onclick=()=>drive(!document.body.classList.contains('drive'));$('drv2').onclick=()=>drive(false);
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'&&document.body.classList.contains('drive'))wake(true)});
+$('zon').onchange=()=>{LS.set('rf-zon',$('zon').checked?'1':'0');plan(cur)};
+const FEEDBACK_WA=''; // opcional: número com DDI+DDD, ex.: 5562999999999
+$('fb').onclick=()=>{const m=(prompt('O que aconteceu ou o que você sentiu falta?')||'').trim();if(!m)return;
+ const ua=navigator.userAgent,info=`\n\n— Rota Fácil (teste 1) · ${S.length} paradas · ${/Android/i.test(ua)?'Android':/iPhone/i.test(ua)?'iPhone':'outro'}`;
+ window.open('https://wa.me/'+FEEDBACK_WA+'?text='+encodeURIComponent(m+info),'_blank')};
+async function init(){await dbInit();try{endPt=JSON.parse(LS.get('rf-end')||'null')}catch(e){endPt=null}gm=LS.get('rf-gm')||'perto';$('gm').value=gm;RAD=Math.max(50,Number(LS.get('rf-rad'))||250);$('rad').value=RAD;$('zon').checked=LS.get('rf-zon')==='1';{const dv=LS.get('rf-dark');setDark(dv==null?!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches):dv==='1')}$('ppk').value=LS.get('rf-ppk')||0;if(LS.get('rf-tour')!=='1')$('tour').hidden=false;setTimeout(checkVer,4000);let sv=null;try{sv=JSON.parse(LS.get('rf-data')||'null')}catch(e){}
+ sv&&sv.S&&(sv.S.length||sv.vazio)?load(sv.S,sv.id,sv.label):load(S0,'vazio','');
+ if(S.length)map.fitBounds(L.latLngBounds(S.map(s=>[s.la,s.lo])).pad(.08));plan(null)}
+init();
+if('serviceWorker' in navigator&&location.protocol.indexOf('http')===0)navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script></body></html>
